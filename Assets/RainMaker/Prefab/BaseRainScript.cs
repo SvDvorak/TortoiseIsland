@@ -209,6 +209,10 @@ namespace DigitalRuby.RainMaker
 
         protected virtual void Start()
         {
+			
+			if (GetComponent<Camera>() == null){
+				Camera = GameObject.FindObjectOfType<Camera>();
+			}
 
 #if DEBUG
 
