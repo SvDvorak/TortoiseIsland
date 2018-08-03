@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 114636164066877750}
   - component: {fileID: 114670334976049340}
   m_Layer: 0
-  m_Name: ThirdPersonController
+  m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2642,6 +2642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MoveSpeedMultipler: 0.25
 --- !u!114 &114670334976049340
 MonoBehaviour:
   m_ObjectHideFlags: 1

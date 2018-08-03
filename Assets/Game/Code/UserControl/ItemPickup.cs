@@ -1,4 +1,6 @@
-﻿using Assets.Game.Code.Items;
+﻿using Assets.Game.Code.Events;
+using Assets.Game.Code.Items;
+using Assets.Game.Code.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +13,20 @@ namespace Assets.Game.Code.UserControl
     {
         private Item collidedWithItem;
         private Item CurrentItem;
+        private ItemUI itemUI;
+
+        private EventActions eventActions;
+
+        //public 
+
+        private int itemsPickedUp;
+
+        void Start()
+        {
+            itemUI = GameObject.FindObjectOfType<ItemUI>();
+            eventActions = GameObject.FindObjectOfType<EventActions>();
+            
+        }
 
 
         void Update()
@@ -47,7 +63,11 @@ namespace Assets.Game.Code.UserControl
                 {
                     CurrentItem = collidedWithItem;
                     Debug.Log("Picked up item!: " + CurrentItem.ItemName);
+                    itemUI.ItemPickedUp(collidedWithItem);
                     Destroy(CurrentItem.gameObject);
+
+                    itemsPickedUp++;
+                    eventActions.DoEvent(itemsPickedUp);
                 }
             }
         }
