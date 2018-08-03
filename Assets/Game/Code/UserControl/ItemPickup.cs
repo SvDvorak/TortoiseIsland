@@ -31,7 +31,7 @@ namespace Assets.Game.Code.UserControl
 
         void Update()
         {
-            PickupItem();
+            CheckPickup();
         }
 
         public void OnTriggerEnter(Collider other)
@@ -50,12 +50,15 @@ namespace Assets.Game.Code.UserControl
             Debug.Log("other.name EXIT: " + other.name);
             if (other.tag == "Item")
             {
-                collidedWithItem.GetComponent<MeshRenderer>().material.color = new Color32(255, 255, 255, 255);
-                collidedWithItem = null;
+                if (collidedWithItem != null)
+                {
+                    collidedWithItem.GetComponent<MeshRenderer>().material.color = new Color32(255, 255, 255, 255);
+                    collidedWithItem = null;
+                }
             }
         }
 
-        public void PickupItem()
+        public void CheckPickup()
         {
             if (collidedWithItem != null)
             {
