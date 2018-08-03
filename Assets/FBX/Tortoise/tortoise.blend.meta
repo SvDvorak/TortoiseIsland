@@ -23,6 +23,7 @@ ModelImporter:
     100034: Head_control
     100036: Icosphere
     100038: Root
+    100040: HeadPole
     400000: //RootNode
     400002: Armature
     400004: BackLeft_1
@@ -43,12 +44,15 @@ ModelImporter:
     400034: Head_control
     400036: Icosphere
     400038: Root
+    400040: HeadPole
     2100000: unnamed
     2300000: //RootNode
     3300000: //RootNode
     4300000: Icosphere
     7400000: Default Take
     7400002: Walk
+    7400004: ArmatureAction
+    7400006: Idle
     9500000: //RootNode
     13700000: Icosphere
     2186277476908879412: ImportLogs
