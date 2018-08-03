@@ -193,8 +193,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				Vector3 v = (m_Animator.deltaPosition * m_MoveSpeedMultiplier) / Time.deltaTime;
 
 				// we preserve the existing y part of the current velocity.
-				v.y = m_Rigidbody.velocity.y;
-				m_Rigidbody.velocity = v;
+				//v.y = m_Rigidbody.velocity.y;
+				//m_Rigidbody.velocity = v;
 			}
 		}
 
