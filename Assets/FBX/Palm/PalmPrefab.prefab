@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4001968345226072}
+  - component: {fileID: 95859123560841320}
   m_Layer: 0
   m_Name: PalmPrefab
   m_TagString: Untagged
@@ -116,7 +117,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 26ea48180f22acb40a4638fe0123ecd3, type: 3}
+  - {fileID: 2100000, guid: 905c6fb0f9bbde44ebe571bda8b33712, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -151,7 +152,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100002, guid: 26ea48180f22acb40a4638fe0123ecd3, type: 3}
+  - {fileID: 2100002, guid: 905c6fb0f9bbde44ebe571bda8b33712, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -177,11 +178,29 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1508110256304306}
-  m_Mesh: {fileID: 4300000, guid: 26ea48180f22acb40a4638fe0123ecd3, type: 3}
+  m_Mesh: {fileID: 4300004, guid: 905c6fb0f9bbde44ebe571bda8b33712, type: 3}
 --- !u!33 &33793300505644974
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1679582107344490}
-  m_Mesh: {fileID: 4300002, guid: 26ea48180f22acb40a4638fe0123ecd3, type: 3}
+  m_Mesh: {fileID: 4300006, guid: 905c6fb0f9bbde44ebe571bda8b33712, type: 3}
+--- !u!95 &95859123560841320
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1122989280296412}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 905c6fb0f9bbde44ebe571bda8b33712, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
