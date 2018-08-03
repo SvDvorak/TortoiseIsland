@@ -1,62 +1,82 @@
 fileFormatVersion: 2
-guid: 3d4956a98177acc40bacaa7b2cc7ac4b
+guid: 4915f0ab27177af4caaf1715229adc8d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Armature
-    100004: BackLeft_1
-    100006: BackLeft_2
+    100000: Armature
+    100002: BackLeft_1
+    100004: BackLeft_2
+    100006: BackLeft_2_end
     100008: BackLeft_control
-    100010: BackRight_1
-    100012: BackRight_2
-    100014: BackRight_control
-    100016: Body
-    100018: FrontLeft_1
-    100020: FrontLeft_2
-    100022: FrontLeft_control
-    100024: FrontRight_1
-    100026: FrontRight_2
-    100028: FrontRight_control
-    100030: Head_1
-    100032: Head_2
-    100034: Head_control
-    100036: Icosphere
-    100038: Root
-    100040: HeadPole
-    400000: //RootNode
-    400002: Armature
-    400004: BackLeft_1
-    400006: BackLeft_2
+    100010: BackLeft_control_end
+    100012: BackRight_1
+    100014: BackRight_2
+    100016: BackRight_2_end
+    100018: BackRight_control
+    100020: BackRight_control_end
+    100022: Body
+    100024: FrontLeft_1
+    100026: FrontLeft_2
+    100028: FrontLeft_2_end
+    100030: FrontLeft_control
+    100032: FrontLeft_control_end
+    100034: FrontRight_1
+    100036: FrontRight_2
+    100038: FrontRight_2_end
+    100040: FrontRight_control
+    100042: FrontRight_control_end
+    100044: Head_1
+    100046: Head_2
+    100048: Head_2_end
+    100050: Head_control
+    100052: Head_control_end
+    100054: HeadPole
+    100056: HeadPole_end
+    100058: Icosphere
+    100060: Root
+    100062: //RootNode
+    400000: Armature
+    400002: BackLeft_1
+    400004: BackLeft_2
+    400006: BackLeft_2_end
     400008: BackLeft_control
-    400010: BackRight_1
-    400012: BackRight_2
-    400014: BackRight_control
-    400016: Body
-    400018: FrontLeft_1
-    400020: FrontLeft_2
-    400022: FrontLeft_control
-    400024: FrontRight_1
-    400026: FrontRight_2
-    400028: FrontRight_control
-    400030: Head_1
-    400032: Head_2
-    400034: Head_control
-    400036: Icosphere
-    400038: Root
-    400040: HeadPole
-    2100000: unnamed
-    2100002: Tortoise
-    2300000: //RootNode
-    3300000: //RootNode
+    400010: BackLeft_control_end
+    400012: BackRight_1
+    400014: BackRight_2
+    400016: BackRight_2_end
+    400018: BackRight_control
+    400020: BackRight_control_end
+    400022: Body
+    400024: FrontLeft_1
+    400026: FrontLeft_2
+    400028: FrontLeft_2_end
+    400030: FrontLeft_control
+    400032: FrontLeft_control_end
+    400034: FrontRight_1
+    400036: FrontRight_2
+    400038: FrontRight_2_end
+    400040: FrontRight_control
+    400042: FrontRight_control_end
+    400044: Head_1
+    400046: Head_2
+    400048: Head_2_end
+    400050: Head_control
+    400052: Head_control_end
+    400054: HeadPole
+    400056: HeadPole_end
+    400058: Icosphere
+    400060: Root
+    400062: //RootNode
+    2100000: Tortoise
     4300000: Icosphere
-    7400000: Default Take
-    7400002: Walk
-    7400004: ArmatureAction
-    7400006: Idle
+    7400000: Armature|ArmatureAction
+    7400002: Armature|Empty
+    7400004: Armature|Idle
+    7400006: Armature|Idle.001
+    7400008: Armature|Talk
+    7400010: Armature|Walk
     9500000: //RootNode
     13700000: Icosphere
-    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -108,7 +128,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 0.01
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
