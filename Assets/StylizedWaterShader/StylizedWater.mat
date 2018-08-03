@@ -48,10 +48,10 @@ Material:
     - _GradientPosition1: 2.5
     - _GradientPosition2: 2.5
     - _LightColorIntensity: 1
-    - _MainFoamIntensity: 4
+    - _MainFoamIntensity: 3
     - _MainFoamOpacity: 1
-    - _MainFoamScale: 80
-    - _MainFoamSpeed: 0.2
+    - _MainFoamScale: 88
+    - _MainFoamSpeed: 3
     - _Opacity: 0.33
     - _OpacityDepth: 2.9
     - _RealTimeReflection: 1
@@ -70,10 +70,10 @@ Material:
     - _TurbulenceScale: 15.53
     - _VertexOffset: 0
     - _WaveDistortionIntensity: 0.59
-    - _WavesAmplitude: 3.74
+    - _WavesAmplitude: 22
     - _WavesDirection: 77
-    - _WavesIntensity: 1.97
-    - _WavesSpeed: 1
+    - _WavesIntensity: 3
+    - _WavesSpeed: 2
     m_Colors:
     - _DepthGradient1: {r: 0, g: 0.6397059, b: 0.50735295, a: 1}
     - _DepthGradient2: {r: 0, g: 0.15466529, b: 0.36764705, a: 1}
