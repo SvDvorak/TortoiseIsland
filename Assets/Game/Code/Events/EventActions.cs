@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Game.Code.Items;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,12 @@ namespace Assets.Game.Code.Events
         public GameObject rain;
         private GameObject rainChild;
         private float rainFadeout;
+        private ItemSpawnController itemSpawnController;
+
+        void Start()
+        {
+            itemSpawnController = GameObject.FindObjectOfType<ItemSpawnController>();
+        }
 
         void Update()
         {
@@ -27,14 +34,15 @@ namespace Assets.Game.Code.Events
 
         public void DoEvent(int itemsPickedUp)
         {
+            itemSpawnController.SpawnItem(itemsPickedUp);
             switch (itemsPickedUp)
             {
                 case 3:
                     rainChild = Instantiate(rain);
                     break;
 
-                case 6:
-                    rainFadeout = 8f;
+                case 5:
+                    rainFadeout = 5f;
                     break;
             }
         }
@@ -43,9 +51,13 @@ namespace Assets.Game.Code.Events
         {
             foreach (AudioSource audio in rainChild.GetComponents<AudioSource>())
             {
-                audio.volume -= audio.volume * Time.deltaTime;
-                if (audio.volume < 0)
-                    audio.volume = 0;
+                if (audio.volume > 0)
+                {
+                    audio.volume -= 2 * Time.deltaTime;
+                    Debug.Log("audio.volume: " + audio.volume);
+                    if (audio.volume < 0)
+                        audio.volume = 0;
+                }
             }
         }
     }
