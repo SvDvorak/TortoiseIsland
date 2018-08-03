@@ -14,7 +14,7 @@ public class CameraStatic : MonoBehaviour {
 	void Update () {
 		if (Target != null)
         {
-            cameraFollow
+            //cameraFollow
         }
 	}
 }
