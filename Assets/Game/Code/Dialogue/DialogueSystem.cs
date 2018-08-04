@@ -39,8 +39,8 @@ namespace Assets.Game.Code.Dialogue
         {
             index = 0;
             listLines = lines;
-
-            ShowLine();
+            if (listLines.Count > 0)
+                ShowLine();
         }
 
         private void NextLine()

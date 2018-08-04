@@ -67,7 +67,6 @@ namespace Assets.Game.Code.UserControl
 
         public void CheckPickup()
         {
-            //This happens now?!?!?!?! TWICE!?!?!
             if (collidedWithItem != null)
             {
                 if (Input.GetButtonDown("PickupItem"))
