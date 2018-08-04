@@ -19,8 +19,8 @@ namespace Assets.Game.Code.Items.Water
                 {
                     //Debug.Log("item not null");
 
-                    item.GetComponent<WaterMover>().IsMoving = false;
-                    item.GetComponent<WobbleWater>().IsMoving = false;
+                    //item.GetComponent<WaterMover>().IsMoving = false;
+                    //item.GetComponent<WobbleWater>().IsMoving = false;
                 }
             }
         }

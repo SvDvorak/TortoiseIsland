@@ -23,8 +23,6 @@ GameObject:
   - component: {fileID: 23127464905856606}
   - component: {fileID: 65925425886476280}
   - component: {fileID: 114837057869056582}
-  - component: {fileID: 114488799079703610}
-  - component: {fileID: 114611152116212016}
   - component: {fileID: 54162155926771096}
   - component: {fileID: 114044984713340990}
   m_Layer: 0
@@ -133,31 +131,6 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &114488799079703610
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892720522827942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef54a50a5a142e4429e2aa7637da1e68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SpeedForward: 2
-  IsMoving: 1
---- !u!114 &114611152116212016
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892720522827942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 250871acdda7c6942809144aa8ffb228, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsMoving: 1
 --- !u!114 &114837057869056582
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -171,4 +144,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Ooh it's my rocket chain gun that I lost when I was on my latest pirate
     hunt, thank you for finding it!
-  Dialogue: 
+  ListLines: []
