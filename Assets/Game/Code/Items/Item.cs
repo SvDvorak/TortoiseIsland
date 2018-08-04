@@ -9,6 +9,7 @@ namespace Assets.Game.Code.Items
     public class Item : MonoBehaviour
     {
         public string ItemName;
+        public string Dialogue;
         void Start()
         {
 

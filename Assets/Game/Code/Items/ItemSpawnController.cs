@@ -18,7 +18,7 @@ namespace Assets.Game.Code.Items
 
         public void SpawnItem(int itemsPickedUp)
         {
-            ItemSpawn lowestSpawn;
+            ItemSpawn lowestSpawn = null;
             int lowestRank = 1337;
             foreach (var spawner in spawns)
             {
@@ -27,7 +27,10 @@ namespace Assets.Game.Code.Items
                     lowestSpawn = spawner;
                 }
                 spawner.ReduceRank();
-                spawner.SpawnItem(GetRandomItem(itemsPickedUp));
+            }
+            if (lowestSpawn != null)
+            {
+                lowestSpawn.SpawnItem(GetRandomItem(itemsPickedUp));
             }
         }
 

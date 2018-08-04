@@ -428,7 +428,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 19806226, guid: 9e05bc7cc03b944449360c3627d2b066, type: 2}
       propertyPath: randomSeed
-      value: -1517341247
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19815408, guid: 9e05bc7cc03b944449360c3627d2b066, type: 2}
       propertyPath: randomSeed
@@ -445,6 +445,10 @@ Prefab:
     - target: {fileID: 19823912, guid: 9e05bc7cc03b944449360c3627d2b066, type: 2}
       propertyPath: randomSeed
       value: -1630339716
+      objectReference: {fileID: 0}
+    - target: {fileID: 19806226, guid: 9e05bc7cc03b944449360c3627d2b066, type: 2}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e05bc7cc03b944449360c3627d2b066, type: 2}
@@ -549,6 +553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Did you know I was once a pirate ? I had several tortoise crewmen, we
     used to rain hell on the royal turtle navy.
+  Dialogue: 
 --- !u!65 &157799402
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -712,7 +717,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4927873381225172, guid: 155debec7cd978d4ebedc03e3f0d9bf6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.11
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 4927873381225172, guid: 155debec7cd978d4ebedc03e3f0d9bf6, type: 2}
       propertyPath: m_LocalPosition.z
@@ -720,24 +725,46 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4927873381225172, guid: 155debec7cd978d4ebedc03e3f0d9bf6, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4927873381225172, guid: 155debec7cd978d4ebedc03e3f0d9bf6, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4927873381225172, guid: 155debec7cd978d4ebedc03e3f0d9bf6, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4927873381225172, guid: 155debec7cd978d4ebedc03e3f0d9bf6, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4927873381225172, guid: 155debec7cd978d4ebedc03e3f0d9bf6, type: 2}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 33403489302969194, guid: 155debec7cd978d4ebedc03e3f0d9bf6,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300022, guid: 6d0968d9cb3b4ae4fbede0bd2589dd03, type: 3}
+    - target: {fileID: 4927873381225172, guid: 155debec7cd978d4ebedc03e3f0d9bf6, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927873381225172, guid: 155debec7cd978d4ebedc03e3f0d9bf6, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927873381225172, guid: 155debec7cd978d4ebedc03e3f0d9bf6, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 23445679212874012, guid: 155debec7cd978d4ebedc03e3f0d9bf6,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4915f0ab27177af4caaf1715229adc8d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 155debec7cd978d4ebedc03e3f0d9bf6, type: 2}
   m_IsPrefabAsset: 0
@@ -814,7 +841,6 @@ GameObject:
   - component: {fileID: 571789530}
   - component: {fileID: 571789529}
   - component: {fileID: 571789528}
-  - component: {fileID: 571789527}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -822,18 +848,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &571789527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 571789526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f16c74fd4c257084f8cf71e5dc62145d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Target: {fileID: 0}
 --- !u!81 &571789528
 AudioListener:
   m_ObjectHideFlags: 0
@@ -926,6 +940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Ah this old box reminds me of the memories I had when I was just a pup,
     yes yes those were good times, just swimming around the sea doing nothing at all..
+  Dialogue: 
 --- !u!65 &628017799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1117,7 +1132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &764766299
 Transform:
   m_ObjectHideFlags: 0
@@ -1125,7 +1140,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 764766298}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.76, y: 0.44, z: -1.48}
+  m_LocalPosition: {x: -102.4, y: 0, z: -89.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 539819736}
@@ -1306,11 +1321,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4231450616152386, guid: 042a99c4be5abf442b3a8dad712b10b1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.35
+      value: 25.74
       objectReference: {fileID: 0}
     - target: {fileID: 4231450616152386, guid: 042a99c4be5abf442b3a8dad712b10b1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.048
       objectReference: {fileID: 0}
     - target: {fileID: 4231450616152386, guid: 042a99c4be5abf442b3a8dad712b10b1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1318,23 +1333,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4231450616152386, guid: 042a99c4be5abf442b3a8dad712b10b1, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.00000020861623
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4231450616152386, guid: 042a99c4be5abf442b3a8dad712b10b1, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.707107
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4231450616152386, guid: 042a99c4be5abf442b3a8dad712b10b1, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.7071066
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4231450616152386, guid: 042a99c4be5abf442b3a8dad712b10b1, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.00000023841855
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4231450616152386, guid: 042a99c4be5abf442b3a8dad712b10b1, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4231450616152386, guid: 042a99c4be5abf442b3a8dad712b10b1, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4231450616152386, guid: 042a99c4be5abf442b3a8dad712b10b1, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 270
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 042a99c4be5abf442b3a8dad712b10b1, type: 2}
@@ -1381,7 +1404,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4215464231897044, guid: d0518394070180d479a27ec38709efc9, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4215464231897044, guid: d0518394070180d479a27ec38709efc9, type: 2}
       propertyPath: m_LocalScale.x
@@ -1636,6 +1659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Did you know I was once a pirate ? I had several tortoise crewmen, we
     used to rain hell on the royal turtle navy.
+  Dialogue: 
 --- !u!65 &1375801978
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1735,6 +1759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Did you know I was once a pirate ? I had several tortoise crewmen, we
     used to rain hell on the royal turtle navy.
+  Dialogue: 
 --- !u!65 &1433117885
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1931,6 +1956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemName: Is this a sweater?
+  Dialogue: 
 --- !u!65 &1613138431
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2035,7 +2061,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b56b8738a1e092c4e9387d25602b62f1, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b56b8738a1e092c4e9387d25602b62f1, type: 3}
       propertyPath: m_LocalScale.x
@@ -2125,68 +2151,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1701045314
+--- !u!1 &1709612143 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1701045315}
-  - component: {fileID: 1701045317}
-  - component: {fileID: 1701045316}
-  - component: {fileID: 1701045318}
-  m_Layer: 0
-  m_Name: CrateCollider
-  m_TagString: CrateCollider
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1701045315
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1701045314}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
-  m_Children: []
-  m_Father: {fileID: 909615355}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!136 &1701045316
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1701045314}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!33 &1701045317
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1701045314}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1701045318
+  m_CorrespondingSourceObject: {fileID: 1805224509373894, guid: 042a99c4be5abf442b3a8dad712b10b1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1031548043}
+--- !u!114 &1709612144
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1701045314}
+  m_GameObject: {fileID: 1709612143}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b36a9fe8efd6a44182e76b8340541a8, type: 3}
+  m_Script: {fileID: 11500000, guid: ef54a50a5a142e4429e2aa7637da1e68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpeedForward: 0.4
+  IsMoving: 1
 --- !u!1 &1769097658
 GameObject:
   m_ObjectHideFlags: 0
@@ -2290,6 +2272,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2130554297}
   - {fileID: 846359253}
   - {fileID: 909615355}
   - {fileID: 1288944299}
@@ -2453,6 +2436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Did you know I was once a pirate ? I had several tortoise crewmen, we
     used to rain hell on the royal turtle navy.
+  Dialogue: 
 --- !u!65 &1985585636
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2677,6 +2661,103 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 468252, guid: f6390724d3c0ad64793ad35ed27c7dc4,
     type: 2}
   m_PrefabInternal: {fileID: 2087230885}
+--- !u!1 &2130554296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2130554297}
+  - component: {fileID: 2130554300}
+  - component: {fileID: 2130554299}
+  - component: {fileID: 2130554298}
+  - component: {fileID: 2130554301}
+  m_Layer: 0
+  m_Name: CrateCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2130554297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2130554296}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1921197285}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &2130554298
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2130554296}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 7
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &2130554299
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2130554296}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &2130554300
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2130554296}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2130554301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2130554296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b36a9fe8efd6a44182e76b8340541a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2134820711
 Prefab:
   m_ObjectHideFlags: 0
@@ -2714,7 +2795,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4184540588169248, guid: 956df95a8cb6ee748abadc9cf7d73c26, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4184540588169248, guid: 956df95a8cb6ee748abadc9cf7d73c26, type: 2}
       propertyPath: m_LocalScale.x
