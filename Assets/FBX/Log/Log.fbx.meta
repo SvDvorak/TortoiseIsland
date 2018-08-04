@@ -1,64 +1,14 @@
 fileFormatVersion: 2
-guid: 3d4956a98177acc40bacaa7b2cc7ac4b
+guid: 22ce0855ffe55384e9fc6f503491533c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Armature
-    100004: BackLeft_1
-    100006: BackLeft_2
-    100008: BackLeft_control
-    100010: BackRight_1
-    100012: BackRight_2
-    100014: BackRight_control
-    100016: Body
-    100018: FrontLeft_1
-    100020: FrontLeft_2
-    100022: FrontLeft_control
-    100024: FrontRight_1
-    100026: FrontRight_2
-    100028: FrontRight_control
-    100030: Head_1
-    100032: Head_2
-    100034: Head_control
-    100036: Icosphere
-    100038: Root
-    100040: HeadPole
     400000: //RootNode
-    400002: Armature
-    400004: BackLeft_1
-    400006: BackLeft_2
-    400008: BackLeft_control
-    400010: BackRight_1
-    400012: BackRight_2
-    400014: BackRight_control
-    400016: Body
-    400018: FrontLeft_1
-    400020: FrontLeft_2
-    400022: FrontLeft_control
-    400024: FrontRight_1
-    400026: FrontRight_2
-    400028: FrontRight_control
-    400030: Head_1
-    400032: Head_2
-    400034: Head_control
-    400036: Icosphere
-    400038: Root
-    400040: HeadPole
-    2100000: unnamed
-    2100002: Tortoise
+    2100000: LogMaterial
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Icosphere
-    7400000: Default Take
-    7400002: Walk
-    7400004: ArmatureAction
-    7400006: Idle
-    7400008: Talk
-    7400010: Turn
-    9500000: //RootNode
-    13700000: Icosphere
-    2186277476908879412: ImportLogs
+    4300000: Cylinder
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -111,7 +61,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -136,7 +86,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
