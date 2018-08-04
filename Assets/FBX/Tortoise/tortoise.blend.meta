@@ -55,6 +55,7 @@ ModelImporter:
     7400004: ArmatureAction
     7400006: Idle
     7400008: Talk
+    7400010: Turn
     9500000: //RootNode
     13700000: Icosphere
     2186277476908879412: ImportLogs
