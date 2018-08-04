@@ -39,7 +39,7 @@ T: I've heard accounts of many stories over a long period of time, from many dif
 B: Have you ever seen a boat come by here?
 T: I can remember two boats slowly passing by at a distance. From my description Malcolm later explained that they must have been fishing boats. Must not be a very good catch around here I guess.
 B: You didn't try making them see you?
-T: How would I do that? I'm just a tortoise. And I'd prefer not to become tortoise soup. It's a thing, believe me. Or believe Malcolm I guess.
+T: How would I do that? I'm just a tortoise. And I'd prefer not to become tortoise soup. It's a thing, believe me. Or I guess believe one of the others who where with me here.
 
 Stone
 T: Steve? I can't get past here, you need to help me out.
@@ -75,6 +75,9 @@ M: Rob, you never told me how you got here.
 T: You never asked.
 M: But I'm asking now.
 T: Well, it simple as I was born here. This has always been my home. I only ever knew my mother and she passed away a long time ago, how she ended up here is a mystery and will remain so forever.
+
+M: Why didn't you ever try to swim away.
+T: Because tortoises can't swim. Well, I figured out I couldn't but I was told when I was young that all tortoises can't swim.
 
 M: Some days I really wonder if I will ever get off this island. Or if I'll ever meet another person.
 M: Before you met me, what was it like?
