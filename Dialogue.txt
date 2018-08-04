@@ -24,7 +24,7 @@ T: I have, but it was a long time ago.
 B: Oh. Ok. Could you help me look though?
 T: Ok. I'll tag along.
 B: That's great, thanks! I'm Steve by the way, what's your name?
-T: Lets say Rob //why not change name when your last one is lost to time?
+T: Lets say Rob
 B: Ok Rob, lets see what we can find!
 
 
@@ -32,11 +32,8 @@ B: Hey Rob, are you all alone on this island?
 T: Usually I am but not now anymore.
 B: Of course but before me?
 T: Lets just say that you're not the first I've met nor will you be the last.
-
 B: How do you know so much about all this stuff? I mean, you're a tortoise.
-
-penis EN KOMMENTAR!!
-T: I've heard many stories over a long period of time, from many different people. You catch up a lot.
+T: In all my years here on this island I've heard many stories, from many different people. You're bound to learn a thing or two.
 
 B: Have you ever seen a boat come by here?
 T: I can remember two boats slowly passing by at a distance. From my description Malcolm later explained that they must have been fishing boats. Must not be a very good catch around here I guess.
@@ -61,11 +58,20 @@ B: Do you mean it doesn't matter anymore?
 T: Yes, I guess back then created things were different, they were made with great care and detail for each boat and made to last a long time.
 
 T-shirt
-penis DIALOG!
+B: Wait... that looks like... my t-shirt! It's actually my t-shirt. See, check the tag in the back here.
+T: That was unexpected. So few things wash ashore so what are the odds it would be your shirt. How lucky!
 
 --- Grown up ---
 
 M: man
+
+M: Rob, you never told me how you got here.
+T: You never asked.
+M: But I'm asking now.
+T: Well, it simple as I was born here. This has always been my home. I only ever knew my mother and she passed away a long time ago, how she ended up here is a mystery and will remain so forever.
+
+M: Why haven't you ever tried to swim away?
+T: Because tortoises can't swim. Well, I figured out on my own that I couldn't but I was told later that all tortoises can't swim.
 
 Radio
 M: Hey, a radio!
@@ -75,29 +81,20 @@ M: Maybe it's a bit sandy but I'm going to give it a try anyway.
 M: Shoot. That could have been helpful.
 T: Anything electrical gets ruined by the ocean the instant it falls in. Though I do remember Leigh found a small flashlight that somehow had survived the harsh water. It was very useful while it lasted though my favorite was when she would use it to light up her face in entertaining ways.
 M: Who's Leigh?
-penis Utveckla mer?
-T: Just someone I used to know.
-
-M: Rob, you never told me how you got here.
-T: You never asked.
-M: But I'm asking now.
-T: Well, it simple as I was born here. This has always been my home. I only ever knew my mother and she passed away a long time ago, how she ended up here is a mystery and will remain so forever.
-
-M: Why didn't you ever try to swim away.
-T: Because tortoises can't swim. Well, I figured out I couldn't but I was told when I was young that all tortoises can't swim.
+T: I guess I could tell you. Leigh was another castaway I met a bunch of years ago. She was about your age when I met her, a bit shy at first but once we got to know eachother she became one of the best friends I've ever had. But that was then.
 
 M: Some days I really wonder if I will ever get off this island. Or if I'll ever meet another person.
 M: Before you met me, what was it like?
 T: It was very lonely, walking around this island. But you push on, you continue living day by day, night by night.
-
-M: Of all the people and animals you've met, who was the worst?
-T: Oh... give me a second. Jaime would definitely top that list, he couldn't deal with my tempo. He would just get angry and run to the other side of the island. I didn't mind too much, he wasn't someone you really wanted to be around. He didn't stay for long either.
 
 Tire
 T: Steve, look over there. You could wear that, it's a tire.
 M: Hah, good one. Curious that thing got out here.
 T: Who knows, used it as a hoop and ran it into the ocean. Though looks more modern than I've ever seen. What's it made of?
 M: Seems like some kind of rubber. I like the grooves in it.
+
+M: Of all the people and animals you've met, who was the worst?
+T: Oh... give me a second. Jaime would definitely top that list, he couldn't deal with my tempo. He would just get angry and run to the other side of the island. I didn't mind too much, he wasn't someone you really wanted to be around. He didn't stay for long either.
 
 Giraffe
 M: Is that a statue? Of what, I've never seen that kind of thing.
@@ -118,9 +115,8 @@ M: But what do you believe?
 T: What does it matter? People come, they stay for a while and then they all, inevitably leave.
 
 M: How do you handle people dying, or leaving you as you say? What is it like being alone after that.
-penis
-T: Do you really want to know? It's a great sadness that tears you apart from the inside followed by long depression that feels like it's never going to end. I am scarred but not in a way that you can see.
-You really question what the meaning of life and even after all this time so far I've come up with nothing.
+T: Do you really want to know? It's a great sadness that tears you apart from the inside followed by long depression that feels like it's never going to end. I've been scarred but not in a way that you can see.
+You really start question what the meaning of life and even after all this time so far I've come up with nothing.
 
 T: Hey, Steve; I'm really going to miss you when you leave me, you know that?
 penis Mening?
@@ -128,5 +124,5 @@ M: Really? I'd figured you'd move on pretty quickly. Not wallow in the old that 
 T: No, you've been good to me, better than most. Even though it's painful to remember, some memories are worth keeping around.
 M: Thanks buddy, I'll miss you too if that is possible in whatever happens after this life.
 
-M: I feel like this is where I take off and leave you.
-T: I'm going to miss you friend.
+M: I feel like this might be it, this might be where I leave you.
+T: I'm going to miss you old friend.
