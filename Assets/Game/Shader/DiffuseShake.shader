@@ -69,7 +69,7 @@ Shader "Transparent/Cutout/Diffuse Shake" {
 			waves = frac (waves);
 			FastSinCos (waves, s,c);
  
-			float waveAmount = v.texcoord.y * (v.color.a + _ShakeBending);
+			float waveAmount = v.color.y * (v.color.a + _ShakeBending);
 			s *= waveAmount;
  
 			s *= normalize (waveSpeed);
