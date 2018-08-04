@@ -171,6 +171,8 @@ ModelImporter:
     4300004: Probale
     4300006: Mesh
     7400000: Default Take
+    7400002: DeathAnimation
+    7400004: Dead
     9500000: //RootNode
     13700000: Probale
     13700002: Mesh
