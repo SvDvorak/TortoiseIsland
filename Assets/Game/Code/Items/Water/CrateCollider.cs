@@ -17,10 +17,7 @@ namespace Assets.Game.Code.Items.Water
                 Item item = other.GetComponent<Item>();
                 if (item != null)
                 {
-                    //Debug.Log("item not null");
-
-                    //item.GetComponent<WaterMover>().IsMoving = false;
-                    //item.GetComponent<WobbleWater>().IsMoving = false;
+                    item.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY;
                 }
             }
         }

@@ -9,48 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1892720522827942}
+  m_RootGameObject: {fileID: 1640729386516566}
   m_IsPrefabAsset: 1
---- !u!1 &1892720522827942
+--- !u!1 &1640729386516566
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4904470447181978}
-  - component: {fileID: 33771763312714784}
-  - component: {fileID: 23127464905856606}
-  - component: {fileID: 114837057869056582}
-  - component: {fileID: 54162155926771096}
-  - component: {fileID: 114044984713340990}
-  - component: {fileID: 64534989926797980}
+  - component: {fileID: 4244650769025730}
+  - component: {fileID: 33340985660725472}
+  - component: {fileID: 23897271569883102}
+  - component: {fileID: 64894057241129704}
+  - component: {fileID: 54380400316279416}
+  - component: {fileID: 114483587692428690}
   m_Layer: 0
-  m_Name: Item - Tire
-  m_TagString: Item
+  m_Name: Item - Shirt
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4904470447181978
+--- !u!4 &4244650769025730
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892720522827942}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 6.593, y: 1.7329999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 1640729386516566}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0, y: 0, z: -3.842}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!23 &23127464905856606
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23897271569883102
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892720522827942}
+  m_GameObject: {fileID: 1640729386516566}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -60,7 +59,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 4915f0ab27177af4caaf1715229adc8d, type: 3}
+  - {fileID: 2100000, guid: 7d99d8a0ee163f643ba351185e0a5c9c, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,19 +79,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33771763312714784
+--- !u!33 &33340985660725472
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892720522827942}
-  m_Mesh: {fileID: 4300022, guid: 6d0968d9cb3b4ae4fbede0bd2589dd03, type: 3}
---- !u!54 &54162155926771096
+  m_GameObject: {fileID: 1640729386516566}
+  m_Mesh: {fileID: 4300000, guid: 7d99d8a0ee163f643ba351185e0a5c9c, type: 3}
+--- !u!54 &54380400316279416
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892720522827942}
+  m_GameObject: {fileID: 1640729386516566}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -102,12 +101,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64534989926797980
+--- !u!64 &64894057241129704
 MeshCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892720522827942}
+  m_GameObject: {fileID: 1640729386516566}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
@@ -115,35 +114,17 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300022, guid: 6d0968d9cb3b4ae4fbede0bd2589dd03, type: 3}
---- !u!114 &114044984713340990
+  m_Mesh: {fileID: 4300000, guid: 7d99d8a0ee163f643ba351185e0a5c9c, type: 3}
+--- !u!114 &114483587692428690
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892720522827942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d41f66b5b4ec59459b41c0b8bd8eae2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 0, g: 1, b: 1, a: 1}
-  outlineWidth: 10
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &114837057869056582
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1892720522827942}
+  m_GameObject: {fileID: 1640729386516566}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 067490b7daf4d084a9769c8f0805f897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemName: Ooh it's my rocket chain gun that I lost when I was on my latest pirate
-    hunt, thank you for finding it!
+  ItemName: 
   ListLines: []

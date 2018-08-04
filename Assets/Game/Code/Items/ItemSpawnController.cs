@@ -8,35 +8,17 @@ namespace Assets.Game.Code.Items
 {
     public class ItemSpawnController : MonoBehaviour
     {
-        private List<ItemSpawn> spawns;
         public List<Item> ListItems;
+        public ItemSpawn currentSpawn;
 
-        void Start()
+        public void SetSpawn(ItemSpawn spawn)
         {
-            spawns = GetComponentsInChildren<ItemSpawn>().ToList();
+            currentSpawn = spawn;
         }
 
         public void SpawnItem(int itemsPickedUp)
         {
-            ItemSpawn lowestSpawn = null;
-            int lowestRank = 1337;
-            foreach (var spawner in spawns)
-            {
-                if (spawner.Rank < lowestRank)
-                {
-                    lowestSpawn = spawner;
-                }
-                spawner.ReduceRank();
-            }
-            if (lowestSpawn != null)
-            {
-                lowestSpawn.SpawnItem(GetRandomItem(itemsPickedUp));
-            }
-        }
-
-        private Item GetRandomItem(int itemsPickedUp)
-        {
-            return ListItems[0];
+            currentSpawn.SpawnItem(ListItems[itemsPickedUp]);
         }
     }
 }
