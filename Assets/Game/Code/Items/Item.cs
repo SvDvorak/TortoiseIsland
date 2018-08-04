@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Game.Code.Dialogue;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,10 +10,15 @@ namespace Assets.Game.Code.Items
     public class Item : MonoBehaviour
     {
         public string ItemName;
-        public string Dialogue;
+        public List<LineTalk> ListLines;
+
         void Start()
         {
-
+            OutlineEffect effect = GetComponent<OutlineEffect>();
+            if (effect != null)
+            {
+                effect.enabled = false;
+            }
         }
     }
 }

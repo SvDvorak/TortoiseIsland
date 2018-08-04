@@ -1,4 +1,5 @@
 ﻿using Assets.Game.Code.Items;
+using Assets.Game.Code.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,10 @@ namespace Assets.Game.Code.Events
     public class EventActions : MonoBehaviour
     {
         public GameObject rain;
-        private GameObject rainChild;
+        public GameObject rainChild;
         private float rainFadeout;
         private ItemSpawnController itemSpawnController;
+        public ImageFade ImageFade;
 
         void Start()
         {
@@ -27,7 +29,13 @@ namespace Assets.Game.Code.Events
                 StopRain();
                 if (rainFadeout <= 0)
                 {
-                    Destroy(rainChild.gameObject);
+                    Debug.Log("STOP RAINING!");
+                    ImageFade.FadeIn(3f);
+                    foreach (AudioSource audio in rainChild.GetComponents<AudioSource>())
+                    {
+                        audio.Stop();
+                    }
+                    GameObject.Destroy(rainChild.gameObject);
                 }
             }
         }
@@ -39,11 +47,13 @@ namespace Assets.Game.Code.Events
             {
                 case 3:
                     rainChild = Instantiate(rain);
+                    ImageFade.FadeOut(1f, 3f);
                     break;
-
                 case 5:
                     rainFadeout = 5f;
+                    ImageFade.FadeOut(1f, 0);
                     break;
+                    
             }
         }
 
@@ -54,7 +64,7 @@ namespace Assets.Game.Code.Events
                 if (audio.volume > 0)
                 {
                     audio.volume -= 2 * Time.deltaTime;
-                    Debug.Log("audio.volume: " + audio.volume);
+                    //Debug.Log("audio.volume: " + audio.volume);
                     if (audio.volume < 0)
                         audio.volume = 0;
                 }

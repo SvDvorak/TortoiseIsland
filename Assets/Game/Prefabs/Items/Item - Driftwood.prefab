@@ -9,48 +9,50 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1857528989083262}
+  m_RootGameObject: {fileID: 1135806170466020}
   m_IsPrefabAsset: 1
---- !u!1 &1857528989083262
+--- !u!1 &1135806170466020
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4927873381225172}
-  - component: {fileID: 33403489302969194}
-  - component: {fileID: 23445679212874012}
-  - component: {fileID: 65865166421073006}
-  - component: {fileID: 114388863199284882}
-  - component: {fileID: 114108973695519366}
-  - component: {fileID: 114405756829111164}
+  - component: {fileID: 4882028135878840}
+  - component: {fileID: 33128245931745766}
+  - component: {fileID: 23479445728136204}
+  - component: {fileID: 65486949413842852}
+  - component: {fileID: 114006474646724076}
+  - component: {fileID: 114594943969860114}
+  - component: {fileID: 54798135191948944}
+  - component: {fileID: 114308445251195218}
+  - component: {fileID: 114112750969878270}
   m_Layer: 0
-  m_Name: Item - Rocket Chain Gun
+  m_Name: Item - Driftwood
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4927873381225172
+--- !u!4 &4882028135878840
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1857528989083262}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 1135806170466020}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 29.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23445679212874012
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!23 &23479445728136204
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1857528989083262}
+  m_GameObject: {fileID: 1135806170466020}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -60,7 +62,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ba0471cdec175be4191b7aacb328eb8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,31 +82,46 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33403489302969194
+--- !u!33 &33128245931745766
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1857528989083262}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65865166421073006
+  m_GameObject: {fileID: 1135806170466020}
+  m_Mesh: {fileID: 4300020, guid: 6d0968d9cb3b4ae4fbede0bd2589dd03, type: 3}
+--- !u!54 &54798135191948944
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1135806170466020}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65486949413842852
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1857528989083262}
+  m_GameObject: {fileID: 1135806170466020}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114108973695519366
+--- !u!114 &114006474646724076
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1857528989083262}
+  m_GameObject: {fileID: 1135806170466020}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef54a50a5a142e4429e2aa7637da1e68, type: 3}
@@ -112,25 +129,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpeedForward: 2
   IsMoving: 1
---- !u!114 &114388863199284882
+--- !u!114 &114112750969878270
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1857528989083262}
+  m_GameObject: {fileID: 1135806170466020}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 067490b7daf4d084a9769c8f0805f897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemName: Ooh it's my rocket chain gun that I lost when I was on my latest pirate
-    hunt, thank you for finding it!
---- !u!114 &114405756829111164
+  ItemName: Paddle
+  ListLines:
+  - Line: Oh ah plank! Enough of these and I can get away from here.
+    Speaker: 0
+    DelayAfter: 1
+  - Line: You're going to need a lot of them..
+    Speaker: 1
+    DelayAfter: 1
+  - Line: And this is the first plank I've seen in months.
+    Speaker: 1
+    DelayAfter: 0
+--- !u!114 &114308445251195218
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1857528989083262}
+  m_GameObject: {fileID: 1135806170466020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d41f66b5b4ec59459b41c0b8bd8eae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 1, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &114594943969860114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1135806170466020}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 250871acdda7c6942809144aa8ffb228, type: 3}

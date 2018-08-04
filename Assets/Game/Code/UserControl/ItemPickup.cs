@@ -1,4 +1,5 @@
-﻿using Assets.Game.Code.Events;
+﻿using Assets.Game.Code.Dialogue;
+using Assets.Game.Code.Events;
 using Assets.Game.Code.Items;
 using Assets.Game.Code.UI;
 using System;
@@ -13,19 +14,18 @@ namespace Assets.Game.Code.UserControl
     {
         private Item collidedWithItem;
         private Item CurrentItem;
-        private ItemUI itemUI;
+        private DialogueSystem dialogueSystem;
 
         private EventActions eventActions;
 
         //public 
 
-        private int itemsPickedUp;
+        private int itemsPickedUp = 0;
 
         void Start()
         {
-            itemUI = GameObject.FindObjectOfType<ItemUI>();
+            dialogueSystem = GameObject.FindObjectOfType<DialogueSystem>();
             eventActions = GameObject.FindObjectOfType<EventActions>();
-            
         }
 
 
@@ -39,7 +39,12 @@ namespace Assets.Game.Code.UserControl
             if (other.tag == "Item")
             {
                 collidedWithItem = other.GetComponent<Item>();
-                collidedWithItem.GetComponent<MeshRenderer>().material.color = new Color32(100, 100, 100, 100);
+                //collidedWithItem.GetComponent<MeshRenderer>().material.color = new Color32(100, 100, 100, 100);
+                OutlineEffect effect = GetComponent<OutlineEffect>();
+                if (effect != null)
+                {
+                    effect.enabled = true;
+                }
             }
         }
 
@@ -49,7 +54,12 @@ namespace Assets.Game.Code.UserControl
             {
                 if (collidedWithItem != null)
                 {
-                    collidedWithItem.GetComponent<MeshRenderer>().material.color = new Color32(255, 255, 255, 255);
+                    //collidedWithItem.GetComponent<MeshRenderer>().material.color = new Color32(255, 255, 255, 255);
+                    OutlineEffect effect = other.GetComponent<OutlineEffect>();
+                    if (effect != null)
+                    {
+                        effect.enabled = false;
+                    }
                     collidedWithItem = null;
                 }
             }
@@ -57,14 +67,14 @@ namespace Assets.Game.Code.UserControl
 
         public void CheckPickup()
         {
+            //This happens now?!?!?!?! TWICE!?!?!
             if (collidedWithItem != null)
             {
                 if (Input.GetButtonDown("PickupItem"))
                 {
                     CurrentItem = collidedWithItem;
-                    itemUI.ItemPickedUp(collidedWithItem);
-                    Destroy(CurrentItem.gameObject);
-
+                    dialogueSystem.SetLines(collidedWithItem.ListLines);
+                    Destroy(collidedWithItem.gameObject);
                     itemsPickedUp++;
                     eventActions.DoEvent(itemsPickedUp);
                 }

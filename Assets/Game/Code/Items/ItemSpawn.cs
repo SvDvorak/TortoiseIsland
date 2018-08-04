@@ -17,7 +17,7 @@ namespace Assets.Game.Code.Items
             Rank++;
             itemCurrent = item;
             item.transform.position = this.transform.position;
-            item.transform.rotation = this.transform.rotation;
+            item.transform.localEulerAngles = new Vector3(this.transform.localEulerAngles.x, item.transform.localEulerAngles.y, this.transform.localEulerAngles.z);
             Instantiate(item);
         }
 
