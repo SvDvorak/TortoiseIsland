@@ -18,7 +18,9 @@ namespace Assets.Game.Code.Items
             itemCurrent = item;
             item.transform.position = this.transform.position;
             item.transform.localEulerAngles = new Vector3(this.transform.localEulerAngles.x, item.transform.localEulerAngles.y, this.transform.localEulerAngles.z);
-            Instantiate(item);
+            var child = Instantiate(item);
+            child.transform.position = this.transform.position;
+            child.transform.localEulerAngles = new Vector3(this.transform.localEulerAngles.x, item.transform.localEulerAngles.y, this.transform.localEulerAngles.z);
         }
 
         public void ReduceRank()

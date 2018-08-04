@@ -15,7 +15,8 @@ namespace Assets.Game.Code.Items.Water
         {
             if (IsMoving)
             {
-                transform.Translate(0, 0 , -SpeedForward * Time.deltaTime, Space.World);
+                //transform.Translate(0, 0 , -SpeedForward * Time.deltaTime, Space.World);
+                transform.Translate(Vector3.forward * SpeedForward * Time.deltaTime);
             }
         }
     }

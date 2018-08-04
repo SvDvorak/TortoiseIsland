@@ -31,15 +31,11 @@ namespace Assets.Game.Code.UI
             }
         }
 
-        public void FadeOut(float fadeDuration, float fadeBackInTime)
+        public void FadeOut(float fadeDuration)
         {
-            Debug.Log("fadeout backintime: " + fadeBackInTime);
             fadeTime = fadeDuration;
             image.CrossFadeAlpha(1f, fadeDuration, false);
-            if (fadeBackInTime > 0)
-            {
-                cooldown = fadeBackInTime;
-            }
+    
         }
 
         public void FadeIn(float fadeDuration)

@@ -70,7 +70,6 @@ namespace Assets.Game.Code.Dialogue
             textFadeout.Show(timeVisible);
 
             cooldown = timeVisible + textFadeout.FadeInDuration + textFadeout.fadeOutDuration + lineTalk.DelayAfter;
-            Debug.Log("cooldown: " + cooldown);
         }
 
         private Color32 GetSpeakerColor(Speaker speaker)

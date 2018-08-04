@@ -10,19 +10,34 @@ namespace Assets.Game.Code.Events
 {
     public class EventActions : MonoBehaviour
     {
+        public ImageFade ImageFade;
         public GameObject rain;
-        public GameObject rainChild;
+        private GameObject rainChild;
+
+        private GameObject player;
+        private GameObject playerMesh;
+
+        public Material MaterialAge2;
+        public Material MaterialAge3;
+
+        public Vector3 ScaleAge2;
+        public Vector3 ScaleAge3;
+
+        public AudioSource musicLvl1;
+
         private float rainFadeout;
         private ItemSpawnController itemSpawnController;
-        public ImageFade ImageFade;
 
         void Start()
         {
             itemSpawnController = GameObject.FindObjectOfType<ItemSpawnController>();
+            player = GameObject.FindGameObjectWithTag("Player");
+            playerMesh = GameObject.FindGameObjectWithTag("PlayerMesh");
         }
 
         void Update()
         {
+
             if (rainFadeout > 0)
             {
                 rainFadeout -= Time.deltaTime;
@@ -45,15 +60,21 @@ namespace Assets.Game.Code.Events
             itemSpawnController.SpawnItem(itemsPickedUp);
             switch (itemsPickedUp)
             {
+                case 1:
+                    musicLvl1.Play();
+                    break;
+
+                case 2:
+                    StartCoroutine(Age2());
+                    break;
+
                 case 3:
-                    rainChild = Instantiate(rain);
-                    ImageFade.FadeOut(1f, 3f);
+                    StartCoroutine(Age3());
                     break;
                 case 5:
                     rainFadeout = 5f;
-                    ImageFade.FadeOut(1f, 0);
+                    ImageFade.FadeOut(1f);
                     break;
-                    
             }
         }
 
@@ -69,6 +90,42 @@ namespace Assets.Game.Code.Events
                         audio.volume = 0;
                 }
             }
+        }
+
+        IEnumerator<WaitForSeconds> Age2()
+        {
+            Debug.Log("age 2!");
+            ImageFade.FadeOut(3f);
+            yield return new WaitForSeconds(3.2f);
+
+            //Spawn new
+            Renderer rend = playerMesh.GetComponent<Renderer>();
+            rend.materials = new Material[]
+            {
+                null, null, null, MaterialAge2
+            };
+            
+            player.transform.localScale = ScaleAge2;
+
+            ImageFade.FadeIn(3f);
+        }
+
+        IEnumerator<WaitForSeconds> Age3()
+        {
+            Debug.Log("age 2!");
+            ImageFade.FadeOut(3f);
+            yield return new WaitForSeconds(3.2f);
+
+            //Spawn new
+            Renderer rend = playerMesh.GetComponent<Renderer>();
+            rend.materials = new Material[]
+            {
+                null, null, null, MaterialAge3
+            };
+
+            player.transform.localScale = ScaleAge2;
+            rainChild = Instantiate(rain);
+            ImageFade.FadeIn(3f);
         }
     }
 }

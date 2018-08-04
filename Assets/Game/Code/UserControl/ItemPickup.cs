@@ -40,7 +40,7 @@ namespace Assets.Game.Code.UserControl
             {
                 collidedWithItem = other.GetComponent<Item>();
                 //collidedWithItem.GetComponent<MeshRenderer>().material.color = new Color32(100, 100, 100, 100);
-                OutlineEffect effect = GetComponent<OutlineEffect>();
+                OutlineEffect effect = other.GetComponent<OutlineEffect>();
                 if (effect != null)
                 {
                     effect.enabled = true;
