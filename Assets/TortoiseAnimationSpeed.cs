@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class TortoiseAnimationSpeed : MonoBehaviour
 {
-    void Start()
+    private Animator _animator;
+
+    public void Start()
     {
-        GetComponent<Animator>().speed = 2.5f;
+        _animator = GetComponent<Animator>();
+        _animator.speed = 2.5f;
     }
 
-    void Update()
+    public void Update()
     {
-
+        _animator.SetBool("IsWalking", transform.parent != null && Mathf.Abs(Input.GetAxis("Vertical")) > 0.1);
     }
 }
