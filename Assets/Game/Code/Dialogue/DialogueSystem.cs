@@ -1,4 +1,5 @@
-﻿using Assets.Game.Code.UI;
+﻿using Assets.Game.Code.Items;
+using Assets.Game.Code.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,10 +18,14 @@ namespace Assets.Game.Code.Dialogue
         private TextFadeout textFadeout;
         private float cooldown = 0;
 
+        public Item FirstTalk;
+
         void Start()
         {
             text = GetComponentInChildren<Text>();
             textFadeout = text.GetComponent<TextFadeout>();
+
+            SetLines(FirstTalk.ListLines);
         }
 
         void Update()
@@ -56,7 +61,6 @@ namespace Assets.Game.Code.Dialogue
                 index = 0;
                 cooldown = 0;
             }
-            
         }
 
         private void ShowLine()
