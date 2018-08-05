@@ -379,7 +379,7 @@ MonoBehaviour:
   - Line: I'm a tortoise!
     Speaker: 1
     DelayAfter: 0
-  - Line: Oh sorry.. Hi tortoise
+  - Line: Oh sorry... hi tortoise
     Speaker: 0
     DelayAfter: 1
   - Line: Hello young one
@@ -395,7 +395,7 @@ MonoBehaviour:
   - Line: Oh. Ok. Could you help me look though?
     Speaker: 0
     DelayAfter: 1
-  - Line: Ok. I'll tag along.
+  - Line: Sure. I'll tag along.
     Speaker: 1
     DelayAfter: 0.5
   - Line: ' That''s great, thanks! I''m Steve by the way, what''s your name?'

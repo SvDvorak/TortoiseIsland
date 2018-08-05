@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4244650769025730}
   - component: {fileID: 33340985660725472}
   - component: {fileID: 23897271569883102}
-  - component: {fileID: 64894057241129704}
   - component: {fileID: 54380400316279416}
   - component: {fileID: 114239089680848852}
   - component: {fileID: 114483587692428690}
+  - component: {fileID: 65810469223777936}
   m_Layer: 0
   m_Name: Item - Shirt
   m_TagString: Item
@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1640729386516566}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -5.66, y: 1.928, z: -3.88}
+  m_LocalPosition: {x: 5.19, y: 2.178, z: -4.19}
   m_LocalScale: {x: 50, y: 50, z: 200}
   m_Children: []
   m_Father: {fileID: 0}
@@ -102,20 +102,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64894057241129704
-MeshCollider:
+--- !u!65 &65810469223777936
+BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1640729386516566}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 7d99d8a0ee163f643ba351185e0a5c9c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.030770307, y: 0.023595175, z: 0.002}
+  m_Center: {x: 0, y: -0.0017975848, z: -0.0002786927}
 --- !u!114 &114239089680848852
 MonoBehaviour:
   m_ObjectHideFlags: 1

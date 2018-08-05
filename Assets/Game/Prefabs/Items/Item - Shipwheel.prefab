@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1068728457568808}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -5.66, y: 1.928, z: -3.88}
+  m_LocalPosition: {x: 6.593, y: 1.7329999, z: 0}
   m_LocalScale: {x: 100, y: 99.99997, z: 99.99997}
   m_Children: []
   m_Father: {fileID: 0}
@@ -132,8 +132,8 @@ MonoBehaviour:
   - Line: Hey, what's this?
     Speaker: 0
     DelayAfter: 1
-  - Line: 'That''s a ship''s wheel. You use that to turn the rudder of the boat and
-      change direction of where you are going. '
+  - Line: That's a ship's wheel. You use that to turn the rudder of the boat and change
+      direction of where you are going. A bit of an old design there.
     Speaker: 1
     DelayAfter: 0
   - Line: I've seen quite a few of those. And for some it mattered a great deal what
@@ -165,7 +165,7 @@ MonoBehaviour:
       Malcolm later explained that they must have been fishing boats. '
     Speaker: 1
     DelayAfter: 0
-  - Line: It must not have been a very good catch around here I guess.
+  - Line: There must not be any good catch around here I guess.
     Speaker: 1
     DelayAfter: 0
   - Line: You didn't try to make them see you?
