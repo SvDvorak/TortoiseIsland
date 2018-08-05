@@ -137,17 +137,27 @@ MonoBehaviour:
     Speaker: 1
     DelayAfter: 0
   - Line: I've seen quite a few of those. And for some it mattered a great deal what
-      kind of wheel you had on your ship. The feel when holding it, the responsiveness
-      when turned and of course the right diameter; everything mattered apparently.
+      kind of wheel you had on your ship.
     Speaker: 1
     DelayAfter: 1
+  - Line: The feel when holding it, the responsiveness when turned and of course the
+      right diameter; everything mattered apparently.
+    Speaker: 1
+    DelayAfter: 0
   - Line: Do you mean it doesn't matter anymore?
     Speaker: 0
     DelayAfter: 0
   - Line: Yes, I guess back then created things were different, they were made with
-      great care and detail for each boat and made to last a long time.
+      great care and detail for each boat and built to last.
     Speaker: 1
     DelayAfter: 6
+  - Line: How do you know so much about all this stuff? I mean, you're a tortoise.
+    Speaker: 1
+    DelayAfter: 1
+  - Line: In all my years here on this island I've heard many stories, from many different
+      people. You're bound to learn a thing or two.
+    Speaker: 1
+    DelayAfter: 3
   - Line: Have you ever seen a boat come by here?
     Speaker: 0
     DelayAfter: 1
@@ -155,15 +165,15 @@ MonoBehaviour:
       Malcolm later explained that they must have been fishing boats. '
     Speaker: 1
     DelayAfter: 0
-  - Line: Must not be a very good catch around here I guess.
+  - Line: It must not have been a very good catch around here I guess.
     Speaker: 1
     DelayAfter: 0
-  - Line: You didn't try making them see you?
+  - Line: You didn't try to make them see you?
     Speaker: 0
     DelayAfter: 0.5
-  - Line: How would I do that? I'm just a tortoise. And I'd prefer not to become tortoise
-      soup. It's a thing, believe me. Or I guess believe one of the others who where
-      with me here.
+  - Line: How would I do that? I'm just a tortoise. And it's a good thing I wasn't
+      able to, I'd prefer not to become tortoise soup. It's a thing, believe me. Or
+      so I have been told.
     Speaker: 1
     DelayAfter: 2
   - Line: Who's Malcolm by the way?

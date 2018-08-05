@@ -60,7 +60,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: d1ef4d35c2214ad4abacb2c56c986a8e, type: 2}
+  - {fileID: 2100000, guid: ad949883f46254e4bbdc44b121166ce3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -137,30 +137,6 @@ MonoBehaviour:
     Speaker: 1
     DelayAfter: 0.5
   - Line: Maybe it's a bit sandy but I'm going to give it a try anyway.
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
     Speaker: 0
     DelayAfter: 0
 --- !u!114 &114512927781058356

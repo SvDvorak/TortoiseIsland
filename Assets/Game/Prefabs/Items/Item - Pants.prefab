@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1676608602215788}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3.05, y: 1.9279999, z: -6.65}
+  m_LocalPosition: {x: -5.66, y: 1.928, z: -3.88}
   m_LocalScale: {x: 30, y: 50, z: 200}
   m_Children: []
   m_Father: {fileID: 0}
@@ -166,12 +166,5 @@ MonoBehaviour:
     Speaker: 0
     DelayAfter: 2
   - Line: Lets just say that you're not the first I've met nor will you be the last.
-    Speaker: 1
-    DelayAfter: 3
-  - Line: How do you know so much about all this stuff? I mean, you're a tortoise.
-    Speaker: 0
-    DelayAfter: 1
-  - Line: In all my years here on this island I've heard many stories, from many different
-      people. You're bound to learn a thing or two.
     Speaker: 1
     DelayAfter: 3
