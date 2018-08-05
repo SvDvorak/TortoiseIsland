@@ -10,6 +10,8 @@ ModelImporter:
     400002: //RootNode
     400004: Wheel
     2100000: unnamed
+    2100002: Wheel
+    2100004: Wheel__Wheel
     2300000: Wheel
     3300000: Wheel
     4300000: Wheel

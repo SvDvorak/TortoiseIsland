@@ -10,10 +10,13 @@ ModelImporter:
     400002: Plane
     400004: Plane_001
     2100000: unnamed
+    2100002: Pants
     2300000: Plane
     2300002: Plane_001
+    2300004: //RootNode
     3300000: Plane
     3300002: Plane_001
+    3300004: //RootNode
     4300000: Plane_001
     4300002: Plane
     7400000: Default Take
