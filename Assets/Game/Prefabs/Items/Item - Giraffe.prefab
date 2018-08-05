@@ -9,48 +9,48 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1676608602215788}
+  m_RootGameObject: {fileID: 1611777618118088}
   m_IsPrefabAsset: 1
---- !u!1 &1676608602215788
+--- !u!1 &1611777618118088
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4501529296623984}
-  - component: {fileID: 33835958109400250}
-  - component: {fileID: 23233119010329136}
-  - component: {fileID: 64319759623677072}
-  - component: {fileID: 54029448956853676}
-  - component: {fileID: 114037405005046452}
-  - component: {fileID: 114383411907533122}
+  - component: {fileID: 4734404563106462}
+  - component: {fileID: 33718913950455144}
+  - component: {fileID: 23347848091692500}
+  - component: {fileID: 54326136906534676}
+  - component: {fileID: 64721409443063266}
+  - component: {fileID: 114047485605311098}
+  - component: {fileID: 114293665180250400}
   m_Layer: 0
-  m_Name: Item - Pants
+  m_Name: Item - Giraffe
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4501529296623984
+--- !u!4 &4734404563106462
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1676608602215788}
+  m_GameObject: {fileID: 1611777618118088}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3.05, y: 1.9279999, z: -6.65}
-  m_LocalScale: {x: 30, y: 50, z: 200}
+  m_LocalPosition: {x: -6.216, y: 1.9279999, z: 3.623}
+  m_LocalScale: {x: 28.79424, y: 28.79424, z: 28.79424}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!23 &23233119010329136
+--- !u!23 &23347848091692500
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1676608602215788}
+  m_GameObject: {fileID: 1611777618118088}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -60,7 +60,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100002, guid: 3fdf78b00e0505b43bf4e9e948340beb, type: 3}
+  - {fileID: 2100000, guid: 7455881722f97314fa59f2c1a92ca1ad, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,19 +80,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33835958109400250
+--- !u!33 &33718913950455144
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1676608602215788}
-  m_Mesh: {fileID: 4300000, guid: 3fdf78b00e0505b43bf4e9e948340beb, type: 3}
---- !u!54 &54029448956853676
+  m_GameObject: {fileID: 1611777618118088}
+  m_Mesh: {fileID: 4300000, guid: 7455881722f97314fa59f2c1a92ca1ad, type: 3}
+--- !u!54 &54326136906534676
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1676608602215788}
+  m_GameObject: {fileID: 1611777618118088}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -102,12 +102,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64319759623677072
+--- !u!64 &64721409443063266
 MeshCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1676608602215788}
+  m_GameObject: {fileID: 1611777618118088}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
@@ -115,13 +115,13 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 3fdf78b00e0505b43bf4e9e948340beb, type: 3}
---- !u!114 &114037405005046452
+  m_Mesh: {fileID: 4300000, guid: 7455881722f97314fa59f2c1a92ca1ad, type: 3}
+--- !u!114 &114047485605311098
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1676608602215788}
+  m_GameObject: {fileID: 1611777618118088}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d41f66b5b4ec59459b41c0b8bd8eae2, type: 3}
@@ -133,45 +133,36 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &114383411907533122
+--- !u!114 &114293665180250400
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1676608602215788}
+  m_GameObject: {fileID: 1611777618118088}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 067490b7daf4d084a9769c8f0805f897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemName: Is this what you're looking for?
+  ItemName: Giraffe Statue
   ListLines:
-  - Line: Is this what you're looking for?
-    Speaker: 1
-    DelayAfter: 1
-  - Line: No, those are a pair of pants. They look nice but seem to be more worn than
-      the ones I already have.
+  - Line: Is that a statue? Of what, I've never seen that kind of thing.
     Speaker: 0
-    DelayAfter: 1
-  - Line: Ok. They just looked kinda similar with those three holes.
+    DelayAfter: 0
+  - Line: 'You''e never seen a giraffe? They''re magnificent creatures with incredibly
+      tall necks. I actually knew a giraffe once here, can''t remember his name as
+      I didn''t know him for very long. '
     Speaker: 1
-    DelayAfter: 5
-  - Line: Hey Rob, are you all alone on this island?
+    DelayAfter: 0
+  - Line: But he was able to get high up in the trees and easily get down the fruit.
+      Though he wasn't always the nicest.
+    Speaker: 1
+    DelayAfter: 0.5
+  - Line: Huh, that's interesting. Kinda hard to picture though. How come he wasn't
+      the nicest?
     Speaker: 0
-    DelayAfter: 1
-  - Line: Usually I am but not now anymore.
+    DelayAfter: 0.5
+  - Line: He had a bit of an ego. Maybe all that time at the zoo, being their big
+      pride and joy really got to his head.
     Speaker: 1
     DelayAfter: 1
-  - Line: Of course but before me?
-    Speaker: 0
-    DelayAfter: 2
-  - Line: Lets just say that you're not the first I've met nor will you be the last.
-    Speaker: 1
-    DelayAfter: 3
-  - Line: How do you know so much about all this stuff? I mean, you're a tortoise.
-    Speaker: 0
-    DelayAfter: 1
-  - Line: In all my years here on this island I've heard many stories, from many different
-      people. You're bound to learn a thing or two.
-    Speaker: 1
-    DelayAfter: 3

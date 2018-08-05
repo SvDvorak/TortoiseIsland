@@ -1,4 +1,5 @@
-﻿using Assets.Game.Code.Items;
+﻿using Assets.Game.Code.Events;
+using Assets.Game.Code.Items;
 using Assets.Game.Code.UI;
 using System;
 using System.Collections.Generic;
@@ -20,10 +21,13 @@ namespace Assets.Game.Code.Dialogue
 
         public Item FirstTalk;
 
+        private EventActions actions;
+
         void Start()
         {
             text = GetComponentInChildren<Text>();
             textFadeout = text.GetComponent<TextFadeout>();
+            actions = GameObject.FindObjectOfType<EventActions>();
 
             SetLines(FirstTalk.ListLines);
         }
@@ -54,12 +58,12 @@ namespace Assets.Game.Code.Dialogue
             if (index < listLines.Count)
             {
                 ShowLine();
-                
             }
             else
             {
                 index = 0;
                 cooldown = 0;
+                actions.DoEvent();
             }
         }
 
@@ -74,6 +78,7 @@ namespace Assets.Game.Code.Dialogue
             textFadeout.Show(timeVisible);
 
             cooldown = timeVisible + textFadeout.FadeInDuration + textFadeout.fadeOutDuration + lineTalk.DelayAfter;
+            //cooldown = 0.5f;
         }
 
         private Color32 GetSpeakerColor(Speaker speaker)
@@ -84,7 +89,10 @@ namespace Assets.Game.Code.Dialogue
                     return new Color32(255, 255, 255, 255);
 
                 case Speaker.Tortoise:
-                    return new Color32(75, 75, 75, 255);
+                    return new Color32(0, 200, 0, 255);
+
+                case Speaker.Radio:
+                    return new Color32(255, 0, 0, 255);
             }
             return new Color32();
         }

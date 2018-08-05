@@ -23,10 +23,11 @@ GameObject:
   - component: {fileID: 23897271569883102}
   - component: {fileID: 64894057241129704}
   - component: {fileID: 54380400316279416}
+  - component: {fileID: 114239089680848852}
   - component: {fileID: 114483587692428690}
   m_Layer: 0
   m_Name: Item - Shirt
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,13 +38,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1640729386516566}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0, z: -3.842}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -6.216, y: 1.9279999, z: 3.623}
+  m_LocalScale: {x: 50, y: 50, z: 200}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!23 &23897271569883102
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -59,7 +60,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 7d99d8a0ee163f643ba351185e0a5c9c, type: 3}
+  - {fileID: 2100002, guid: 7d99d8a0ee163f643ba351185e0a5c9c, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,7 +98,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -115,6 +116,23 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 7d99d8a0ee163f643ba351185e0a5c9c, type: 3}
+--- !u!114 &114239089680848852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1640729386516566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d41f66b5b4ec59459b41c0b8bd8eae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.06407974, g: 0.1749344, b: 0.9056604, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!114 &114483587692428690
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,4 +145,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemName: 
-  ListLines: []
+  ListLines:
+  - Line: Wait... this looks like... my t-shirt! It's actually my t-shirt. See, check
+      the tag in the back here.
+    Speaker: 0
+    DelayAfter: 0
+  - Line: That was unexpected. So few things wash ashore so what are the odds it would
+      be your shirt. How lucky!
+    Speaker: 1
+    DelayAfter: 1

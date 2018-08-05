@@ -11,6 +11,8 @@ namespace Assets.Game.Code.Dialogue
         private DialogueSystem dialogueSystem;
         public List<LineTalk> lineTalks;
         public GameObject tortoise;
+        public GameObject Rotator;
+        public AudioSource musicLvl1;
 
         private bool isCollided = false;
         void Start()
@@ -23,8 +25,10 @@ namespace Assets.Game.Code.Dialogue
             if (!isCollided && other.tag == "Player")
             {
                 isCollided = true;
+                tortoise.transform.parent = Rotator.transform;
                 dialogueSystem.SetLines(lineTalks);
-                GameObject.Destroy(this.gameObject);
+                musicLvl1.Play();
+                //GameObject.Destroy(this.gameObject);
             }
         }
     }

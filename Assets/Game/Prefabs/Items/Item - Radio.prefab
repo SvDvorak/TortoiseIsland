@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23605949897753690}
   - component: {fileID: 64938702068060842}
   - component: {fileID: 54338830971830946}
+  - component: {fileID: 114512927781058356}
   - component: {fileID: 114418790353181510}
   m_Layer: 0
   m_Name: Item - Radio
@@ -37,13 +38,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1758083043074540}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 4.5765533, y: -1.286377, z: 5.480835}
-  m_LocalScale: {x: 100, y: 99.99997, z: 99.99997}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -1.87, y: 1.9279999, z: 6.24}
+  m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
 --- !u!23 &23605949897753690
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -97,7 +98,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -126,5 +127,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 067490b7daf4d084a9769c8f0805f897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemName: 
-  ListLines: []
+  ItemName: Radio
+  ListLines:
+  - Line: Hey, a radio!
+    Speaker: 0
+    DelayAfter: 0
+  - Line: Oh, I haven't seen those in a while. Unlikely that'll work though, with
+      the water and sand.
+    Speaker: 1
+    DelayAfter: 0.5
+  - Line: Maybe it's a bit sandy but I'm going to give it a try anyway.
+    Speaker: 0
+    DelayAfter: 0
+  - Line: 
+    Speaker: 0
+    DelayAfter: 0
+  - Line: 
+    Speaker: 0
+    DelayAfter: 0
+  - Line: 
+    Speaker: 0
+    DelayAfter: 0
+  - Line: 
+    Speaker: 0
+    DelayAfter: 0
+  - Line: 
+    Speaker: 0
+    DelayAfter: 0
+  - Line: 
+    Speaker: 0
+    DelayAfter: 0
+  - Line: 
+    Speaker: 0
+    DelayAfter: 0
+  - Line: 
+    Speaker: 0
+    DelayAfter: 0
+--- !u!114 &114512927781058356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1758083043074540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d41f66b5b4ec59459b41c0b8bd8eae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.06407974, g: 0.1749344, b: 0.9056604, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []

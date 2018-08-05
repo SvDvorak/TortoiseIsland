@@ -1,10 +1,12 @@
-﻿using Assets.Game.Code.Items;
+﻿using Assets.Game.Code.Dialogue;
+using Assets.Game.Code.Items;
 using Assets.Game.Code.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Game.Code.Events
 {
@@ -12,6 +14,12 @@ namespace Assets.Game.Code.Events
     {
         public ImageFade ImageFade;
         public GameObject rain;
+        public Item TalkRadio;
+        public Item TalkAge2;
+        public Item TalkAge3;
+        public Item TalkLastTortoise;
+        public Text TextEnd;
+        private DialogueSystem dialogueSystem;
         private GameObject rainChild;
 
         private GameObject player;
@@ -23,7 +31,7 @@ namespace Assets.Game.Code.Events
         public Vector3 ScaleAge2;
         public Vector3 ScaleAge3;
 
-        public AudioSource musicLvl1;
+        private int eventsDone;
 
         private float rainFadeout;
         private ItemSpawnController itemSpawnController;
@@ -33,61 +41,120 @@ namespace Assets.Game.Code.Events
             itemSpawnController = GameObject.FindObjectOfType<ItemSpawnController>();
             player = GameObject.FindGameObjectWithTag("Player");
             playerMesh = GameObject.FindGameObjectWithTag("PlayerMesh");
+            dialogueSystem = GameObject.FindObjectOfType<DialogueSystem>();
+            TextEnd.CrossFadeAlpha(0f, 0f, true);
         }
 
         void Update()
         {
-
-            if (rainFadeout > 0)
+            if (Input.GetButtonDown("Exit"))
             {
-                rainFadeout -= Time.deltaTime;
-                StopRain();
-                if (rainFadeout <= 0)
-                {
-                    Debug.Log("STOP RAINING!");
-                    ImageFade.FadeIn(3f);
-                    foreach (AudioSource audio in rainChild.GetComponents<AudioSource>())
-                    {
-                        audio.Stop();
-                    }
-                    GameObject.Destroy(rainChild.gameObject);
-                }
+                Application.Quit();
             }
         }
 
-        public void DoEvent(int itemsPickedUp)
+        /// <summary>
+        /// These are called when all the lines of a LineTalk are used.
+        /// </summary>
+        public void DoEvent()
         {
-            itemSpawnController.SpawnItem(itemsPickedUp);
-            switch (itemsPickedUp)
+            Debug.Log("eventsDone: " + eventsDone);
+            switch (eventsDone)
             {
+                case 0:
+                    //itemSpawnController.SpawnItem(itemsSpawned);
+                    break;
+
                 case 1:
-                    musicLvl1.Play();
+                    //Done talk turtle, spawn pants
+                    itemSpawnController.SpawnItem(eventsDone);
+
                     break;
 
                 case 2:
-                    StartCoroutine(Age2());
+                    //Done talk pants, spawn Steering Wheel
+                    itemSpawnController.SpawnItem(eventsDone);
+
+
+                    //StartCoroutine(Age3());
                     break;
 
                 case 3:
+                    itemSpawnController.SpawnItem(eventsDone);
+                    //Done talk T-Shirt
+                    break;
+                case 4:
+                    StartCoroutine(Age2());
+                    break;
+
+                case 5:
+                    //Age2 fade in done
+                    dialogueSystem.SetLines(TalkAge2.ListLines);
+
+                    break;
+                case 6:
+                    //Age2 talk done
+                    itemSpawnController.SpawnItem(eventsDone);
+
+                    break;
+                case 7:
+                    //Radio talk done
+                    //itemSpawnController.SpawnItem(eventsDone);
+
+                    StartCoroutine(RadioClick());
+                    break;
+
+                case 8:
+                    //Radio fadein done
+                    dialogueSystem.SetLines(TalkRadio.ListLines);
+                    break;
+
+                case 9:
+                    //Radio after fade talk done
+                    itemSpawnController.SpawnItem(eventsDone);
+                    break;
+
+                case 10:
+                    //Tire talk done
+                    itemSpawnController.SpawnItem(eventsDone);
+
+                    break;
+
+                case 11:
+                    //Giraffe talk done
                     StartCoroutine(Age3());
                     break;
-                case 5:
-                    rainFadeout = 5f;
-                    ImageFade.FadeOut(1f);
+
+                case 12:
+                    //Age3 fade in done
+                    dialogueSystem.SetLines(TalkAge3.ListLines);
+                    break;
+
+                case 13:
+                    //Age3 talk done
+                    StartCoroutine(BobDies());
+
+                    break;
+                case 14:
+                    //Bob is dead, say goodbye
+                    dialogueSystem.SetLines(TalkLastTortoise.ListLines);
+                    break;
+                case 15:
+                    //Goodbye said
+                    StartCoroutine(EndGame());
                     break;
             }
+            eventsDone++;
         }
 
         private void StopRain()
         {
             foreach (AudioSource audio in rainChild.GetComponents<AudioSource>())
             {
-                if (audio.volume > 0)
+                if (audio.isPlaying)
                 {
-                    audio.volume -= 2 * Time.deltaTime;
-                    //Debug.Log("audio.volume: " + audio.volume);
-                    if (audio.volume < 0)
-                        audio.volume = 0;
+                    audio.Stop();
+                    GameObject.Destroy(rainChild.gameObject);
                 }
             }
         }
@@ -104,15 +171,31 @@ namespace Assets.Game.Code.Events
             {
                 null, null, null, MaterialAge2
             };
-            
             player.transform.localScale = ScaleAge2;
 
+            //Rain time!
+            rainChild = Instantiate(rain);
+
             ImageFade.FadeIn(3f);
+            yield return new WaitForSeconds(2.0f);
+            DoEvent();
+        }
+
+        IEnumerator<WaitForSeconds> RadioClick()
+        {
+            Debug.Log("Radio click!");
+            ImageFade.FadeOut(1f);
+            yield return new WaitForSeconds(1.2f);
+            StopRain();
+            yield return new WaitForSeconds(1.0f);
+            ImageFade.FadeIn(2f);
+            yield return new WaitForSeconds(1.5f);
+            DoEvent();
         }
 
         IEnumerator<WaitForSeconds> Age3()
         {
-            Debug.Log("age 2!");
+            Debug.Log("age 3!");
             ImageFade.FadeOut(3f);
             yield return new WaitForSeconds(3.2f);
 
@@ -122,10 +205,25 @@ namespace Assets.Game.Code.Events
             {
                 null, null, null, MaterialAge3
             };
-
-            player.transform.localScale = ScaleAge2;
-            rainChild = Instantiate(rain);
+            player.transform.localScale = ScaleAge3;
             ImageFade.FadeIn(3f);
+            yield return new WaitForSeconds(2.5f);
+            DoEvent();
+        }
+
+        IEnumerator<WaitForSeconds> BobDies()
+        {
+            Debug.Log("RIP Bob");
+            ImageFade.FadeOut(3f);
+            yield return new WaitForSeconds(3.2f);
+            DoEvent();
+        }
+
+        IEnumerator<WaitForSeconds> EndGame()
+        {
+            TextEnd.CrossFadeAlpha(1f, 2f, true);
+            TextEnd.text = "For all of us who wander alone.";
+            yield return new WaitForSeconds(3f);
         }
     }
 }

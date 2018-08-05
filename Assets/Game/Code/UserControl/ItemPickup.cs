@@ -18,10 +18,6 @@ namespace Assets.Game.Code.UserControl
 
         private EventActions eventActions;
 
-        //public 
-
-        private int itemsPickedUp = 0;
-
         void Start()
         {
             dialogueSystem = GameObject.FindObjectOfType<DialogueSystem>();
@@ -74,8 +70,6 @@ namespace Assets.Game.Code.UserControl
                     CurrentItem = collidedWithItem;
                     dialogueSystem.SetLines(collidedWithItem.ListLines);
                     Destroy(collidedWithItem.gameObject);
-                    itemsPickedUp++;
-                    eventActions.DoEvent(itemsPickedUp);
                 }
             }
         }

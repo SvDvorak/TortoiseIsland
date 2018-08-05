@@ -655,7 +655,7 @@ Transform:
   - {fileID: 571789530}
   - {fileID: 681587238}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &73533076
 MonoBehaviour:
@@ -681,7 +681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ca9445ef323e340927b25482e89f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementYSpeed: 300
+  movementYSpeed: 10
 --- !u!1 &78951843
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,6 +831,7 @@ GameObject:
   - component: {fileID: 126378730}
   - component: {fileID: 126378729}
   - component: {fileID: 126378728}
+  - component: {fileID: 126378733}
   m_Layer: 0
   m_Name: FirstTortoiseTalk
   m_TagString: Untagged
@@ -865,51 +866,72 @@ MonoBehaviour:
   - Line: Hello young one
     Speaker: 1
     DelayAfter: 2
-  - Line: 
+  - Line: I'm lost, I don't know how I ended up here and I'm missing my T-shirt. You
+      haven't happened to have seen one?
+    Speaker: 0
+    DelayAfter: 2
+  - Line: I have, but it was a long time ago.
+    Speaker: 1
+    DelayAfter: 1
+  - Line: Oh. Ok. Could you help me look though?
+    Speaker: 0
+    DelayAfter: 1
+  - Line: Ok. I'll tag along.
+    Speaker: 1
+    DelayAfter: 0.5
+  - Line: ' That''s great, thanks! I''m Steve by the way, what''s your name?'
+    Speaker: 0
+    DelayAfter: 1
+  - Line: Lets say Rob
+    Speaker: 1
+    DelayAfter: 1
+  - Line: Ok Rob, lets see what we can find!
+    Speaker: 0
+    DelayAfter: 10
+  - Line: Hey Rob, are you all alone on this island?
+    Speaker: 0
+    DelayAfter: 1
+  - Line: Usually I am but not now anymore.
+    Speaker: 1
+    DelayAfter: 1
+  - Line: Of course but before me?
     Speaker: 0
     DelayAfter: 0
-  - Line: 
+  - Line: Lets just say that you're not the first I've met nor will you be the last.
+    Speaker: 1
+    DelayAfter: 1
+  - Line: How do you know so much about all this stuff? I mean, you're a tortoise.
     Speaker: 0
-    DelayAfter: 0
-  - Line: 
+    DelayAfter: 1
+  - Line: In all my years here on this island I've heard many stories, from many different
+      people. You're bound to learn a thing or two.
+    Speaker: 1
+    DelayAfter: 10
+  - Line: Have you ever seen a boat come by here?
     Speaker: 0
-    DelayAfter: 0
-  - Line: 
+    DelayAfter: 1
+  - Line: I can remember two boats slowly passing by at a distance. From my description
+      Malcolm later explained that they must have been fishing boats. Must not be
+      a very good catch around here I guess.
+    Speaker: 1
+    DelayAfter: 1
+  - Line: You didn't try making them see you?
     Speaker: 0
-    DelayAfter: 0
-  - Line: 
+    DelayAfter: 1
+  - Line: How would I do that? I'm just a tortoise. And I'd prefer not to become tortoise
+      soup. It's a thing, believe me. Or I guess believe one of the others who where
+      with me here.
+    Speaker: 1
+    DelayAfter: 1
+  - Line: Who's Malcolm by the way?
     Speaker: 0
+    DelayAfter: 3
+  - Line: Just someone I used to know.
+    Speaker: 1
     DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
-  - Line: 
-    Speaker: 0
-    DelayAfter: 0
+  tortoise: {fileID: 1684720806}
+  Rotator: {fileID: 73533074}
+  musicLvl1: {fileID: 126378733}
 --- !u!65 &126378729
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -975,8 +997,103 @@ Transform:
   m_LocalScale: {x: 5.0989, y: 2.4069998, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &126378733
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 126378727}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: aa8acbb695326d14a9ede08a4b09024d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.123
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &126566079
 GameObject:
   m_ObjectHideFlags: 0
@@ -4136,7 +4253,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 554198981}
   m_LocalRotation: {x: -0, y: 0.693176, z: -0, w: 0.7207685}
-  m_LocalPosition: {x: -6.24, y: 1.928, z: -3.9}
+  m_LocalPosition: {x: -5.66, y: 1.928, z: -3.88}
   m_LocalScale: {x: 1.0000007, y: 1, z: 1.0000007}
   m_Children: []
   m_Father: {fileID: 1102052468}
@@ -4796,6 +4913,51 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 620989139}
   m_Mesh: {fileID: 4300056, guid: 6d0968d9cb3b4ae4fbede0bd2589dd03, type: 3}
+--- !u!1 &633850738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 633850740}
+  - component: {fileID: 633850739}
+  m_Layer: 0
+  m_Name: LastTortoiseTalk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &633850739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 633850738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 067490b7daf4d084a9769c8f0805f897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemName: Talk
+  ListLines:
+  - Line: I'm going to miss you old friend.
+    Speaker: 1
+    DelayAfter: 5
+--- !u!4 &633850740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 633850738}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.521698, y: 1.8504105, z: -2.936085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &650839362
 GameObject:
   m_ObjectHideFlags: 0
@@ -5923,7 +6085,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4140909584090378, guid: 1abd8bedc661b404c8da16b6ef5877b9, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 23852075787021026, guid: 1abd8bedc661b404c8da16b6ef5877b9,
         type: 2}
@@ -7623,9 +7785,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ListItems:
-  - {fileID: 114112750969878270, guid: eee97d72f1ac12a42afd4a48ec545f71, type: 2}
-  - {fileID: 114497680069139930, guid: 32a5d48892c02624cb7f831c04693ac9, type: 2}
+  - {fileID: 114383411907533122, guid: 77d6ff53c84e36c4aa304f1b2355cd38, type: 2}
+  - {fileID: 114866455590711070, guid: c865ed91f5bd15847bcf8e42a7661894, type: 2}
+  - {fileID: 114483587692428690, guid: d6211e0ac7c3cb94c8a1266e4620cdc6, type: 2}
+  - {fileID: 114418790353181510, guid: 5a3dc7adbf1699348a28881101362269, type: 2}
   - {fileID: 114837057869056582, guid: 1cf6775041cfea3479b7b0225dca2da4, type: 2}
+  - {fileID: 114293665180250400, guid: 5efa6d35a2acdfb40adf6d845bdd4002, type: 2}
   currentSpawn: {fileID: 1516317995}
 --- !u!1 &1121016699
 GameObject:
@@ -8099,6 +8264,81 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1149930676}
   m_Mesh: {fileID: 4300018, guid: 6d0968d9cb3b4ae4fbede0bd2589dd03, type: 3}
+--- !u!1 &1154976262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1154976263}
+  - component: {fileID: 1154976265}
+  - component: {fileID: 1154976264}
+  m_Layer: 5
+  m_Name: TextEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1154976263
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1154976262}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1993918899}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 289.68, y: 66.15}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1154976264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1154976262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 18
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: For all of us who wander alone.
+--- !u!222 &1154976265
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1154976262}
+  m_CullTransparentMesh: 0
 --- !u!1 &1166438822
 GameObject:
   m_ObjectHideFlags: 0
@@ -8921,7 +9161,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1311334686}
   m_LocalRotation: {x: -0, y: 0.693176, z: -0, w: 0.7207685}
-  m_LocalPosition: {x: -6.24, y: 1.9279999, z: 3.63}
+  m_LocalPosition: {x: -6.216, y: 1.9279999, z: 3.623}
   m_LocalScale: {x: 1.0000007, y: 1, z: 1.0000007}
   m_Children: []
   m_Father: {fileID: 1102052468}
@@ -9504,6 +9744,71 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1399980409}
   m_Mesh: {fileID: 4300054, guid: 6d0968d9cb3b4ae4fbede0bd2589dd03, type: 3}
+--- !u!1 &1405572278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1405572280}
+  - component: {fileID: 1405572279}
+  m_Layer: 0
+  m_Name: Age2Talk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1405572279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1405572278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 067490b7daf4d084a9769c8f0805f897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemName: Talk
+  ListLines:
+  - Line: Rob, you never told me how you got here.
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: You never asked.
+    Speaker: 1
+    DelayAfter: 0.5
+  - Line: But I'm asking now.
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: 'Well, it simple as I was born here. This has always been my home. '
+    Speaker: 1
+    DelayAfter: 0
+  - Line: I only ever knew my mother and she passed away a long time ago, how she
+      ended up here is a mystery and will remain so forever.
+    Speaker: 1
+    DelayAfter: 0.5
+  - Line: Why haven't you ever tried to swim away?
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: Because tortoises can't swim. Well, I figured out on my own that I couldn't
+      but I was told later that all tortoises can't swim.
+    Speaker: 1
+    DelayAfter: 1
+--- !u!4 &1405572280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1405572278}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.521698, y: 1.8504105, z: -2.936085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1411819415
 GameObject:
   m_ObjectHideFlags: 0
@@ -11022,7 +11327,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1993918899}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11332,11 +11637,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ImageFade: {fileID: 1606616373}
   rain: {fileID: 160098, guid: 69b40ef7ee16c834c844b3fa26e0fdda, type: 2}
+  TalkRadio: {fileID: 2036142112}
+  TalkAge2: {fileID: 1405572279}
+  TalkAge3: {fileID: 2069392482}
+  TalkLastTortoise: {fileID: 633850739}
+  TextEnd: {fileID: 1154976264}
   MaterialAge2: {fileID: 2100000, guid: 173dc96c60c3a85499077bc86fe33266, type: 2}
   MaterialAge3: {fileID: 2100000, guid: 695f036c9a80d5344bc47bc314eee11c, type: 2}
   ScaleAge2: {x: 1.1, y: 1, z: 1.1}
   ScaleAge3: {x: 1, y: 1, z: 1}
-  musicLvl1: {fileID: 1661495664}
 --- !u!4 &1661495663
 Transform:
   m_ObjectHideFlags: 0
@@ -11348,7 +11657,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1661495664
 AudioSource:
@@ -12034,7 +12343,7 @@ RectTransform:
   - {fileID: 717971024}
   - {fileID: 2016356365}
   m_Father: {fileID: 1993918899}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -12608,7 +12917,7 @@ Transform:
   - {fileID: 148345678}
   - {fileID: 1102052468}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1833909622
 GameObject:
@@ -13486,7 +13795,7 @@ Transform:
   - {fileID: 345015719}
   - {fileID: 2075965804}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1921197284
 GameObject:
@@ -13516,7 +13825,7 @@ Transform:
   - {fileID: 846359253}
   - {fileID: 1288944299}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1922176866
 GameObject:
@@ -13689,7 +13998,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1941510387
 GameObject:
@@ -13804,7 +14113,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400062, guid: 4915f0ab27177af4caaf1715229adc8d, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 4915f0ab27177af4caaf1715229adc8d, type: 3}
       propertyPath: m_Controller
@@ -14066,10 +14375,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1720092107}
   - {fileID: 1606616370}
+  - {fileID: 1154976263}
+  - {fileID: 1720092107}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -14273,7 +14583,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2016356363}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.7667236, y: 1.9325638, z: -3.0664074}
+  m_LocalPosition: {x: -5.766754, y: 1.9325562, z: -3.0664074}
   m_LocalScale: {x: 1.0443865, y: 1.0443865, z: 1.0443865}
   m_Children: []
   m_Father: {fileID: 1720092107}
@@ -14355,6 +14665,80 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2032992812}
   m_Mesh: {fileID: 4300040, guid: 6d0968d9cb3b4ae4fbede0bd2589dd03, type: 3}
+--- !u!1 &2036142111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2036142113}
+  - component: {fileID: 2036142112}
+  m_Layer: 0
+  m_Name: RadioTalk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2036142112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2036142111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 067490b7daf4d084a9769c8f0805f897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemName: RadioClick
+  ListLines:
+  - Line: '*click but nothing happens*'
+    Speaker: 2
+    DelayAfter: 1
+  - Line: Shoot. That could have been helpful.
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: Anything electrical gets ruined by the ocean the instant it falls in. Though
+      I do remember Leigh found a small flashlight that somehow had survived the harsh
+      water. It was very useful while it lasted though my favorite was when she would
+      use it to light up her face in entertaining ways.
+    Speaker: 1
+    DelayAfter: 1
+  - Line: Who's Leigh?
+    Speaker: 0
+    DelayAfter: 2
+  - Line: I guess I could tell you. Leigh was another castaway I met a bunch of years
+      ago. She was about your age when I met her, a bit shy at first but once we got
+      to know eachother she became one of the best friends I've ever had. But that
+      was then.
+    Speaker: 1
+    DelayAfter: 1
+  - Line: Some days I really wonder if I will ever get off this island. Or if I'll
+      ever meet another person.
+    Speaker: 0
+    DelayAfter: 0
+  - Line: Before you met me, what was it like?
+    Speaker: 0
+    DelayAfter: 1
+  - Line: It was very lonely, walking around this island. But you push on, you continue
+      living day by day, night by night.
+    Speaker: 1
+    DelayAfter: 2
+--- !u!4 &2036142113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2036142111}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.521698, y: 1.8504105, z: -2.936085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2059043733
 GameObject:
   m_ObjectHideFlags: 0
@@ -14507,6 +14891,108 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2065348218}
   m_Mesh: {fileID: 4300024, guid: 6d0968d9cb3b4ae4fbede0bd2589dd03, type: 3}
+--- !u!1 &2069392481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2069392483}
+  - component: {fileID: 2069392482}
+  m_Layer: 0
+  m_Name: Age3Talk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2069392482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2069392481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 067490b7daf4d084a9769c8f0805f897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemName: Talk
+  ListLines:
+  - Line: There really isn't anyway of this island is there?
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: Most likely not, no.
+    Speaker: 1
+    DelayAfter: 0.5
+  - Line: Atleast we're both stuck here, together.
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: Yes we are. For a while.
+    Speaker: 1
+    DelayAfter: 3
+  - Line: What happens when you die?
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: That is one of life's toughest questions. I've heard so many different theories
+      that it'd make your head spin. But in the end nobody knows.
+    Speaker: 1
+    DelayAfter: 0.5
+  - Line: But what do you believe?
+    Speaker: 0
+    DelayAfter: 1
+  - Line: What does it matter? People come, they stay for a while and then they all,
+      inevitably leave.
+    Speaker: 1
+    DelayAfter: 0.5
+  - Line: How do you handle people dying, or leaving you as you say? What is it like
+      being alone after that.
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: Do you really want to know? It's a great sadness that tears you apart from
+      the inside followed by long depression that feels like it's never going to end.
+    Speaker: 1
+    DelayAfter: 0
+  - Line: 
+    Speaker: 1
+    DelayAfter: 2
+  - Line: "I've been scarred but not in a way that you can see.\r\nYou really start
+      question what the meaning of life and even after all this time so far I've come
+      up with nothing."
+    Speaker: 1
+    DelayAfter: 3
+  - Line: Hey, Steve; I'm really going to miss you when you leave me, you know that?
+    Speaker: 1
+    DelayAfter: 0.5
+  - Line: 'M: Really? I''d figured you''d move on pretty quickly. Not wallow in the
+      old that will and kinda is me.'
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: No, you've been good to me, better than most. Even though it's painful to
+      remember, some memories are worth keeping around.
+    Speaker: 1
+    DelayAfter: 1
+  - Line: Thanks buddy, I'll miss you too if that is possible in whatever happens
+      after this life.
+    Speaker: 0
+    DelayAfter: 5
+  - Line: I feel like this might be it, this might be where I leave you.
+    Speaker: 0
+    DelayAfter: 0
+--- !u!4 &2069392483
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2069392481}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.521698, y: 1.8504105, z: -2.936085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2069659255
 GameObject:
   m_ObjectHideFlags: 0

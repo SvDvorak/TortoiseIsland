@@ -58,7 +58,7 @@ T: Just someone I used to know.
 
 
 T-shirt
-B: Wait... that looks like... my t-shirt! It's actually my t-shirt. See, check the tag in the back here.
+B: Wait... this looks like... my t-shirt! It's actually my t-shirt. See, check the tag in the back here.
 T: That was unexpected. So few things wash ashore so what are the odds it would be your shirt. How lucky!
 
 --- Grown up ---
@@ -90,7 +90,7 @@ T: It was very lonely, walking around this island. But you push on, you continue
 Tire
 T: Steve, look over there. You could wear that, it's a tire.
 M: Hah, good one. Curious that thing got out here.
-T: Who knows, used it as a hoop and ran it into the ocean. Though looks more modern than I've ever seen. What's it made of?
+T: Who knows, maybe someone used it as a hoop and ran it into the ocean. Though looks more modern than I've ever seen. What's it made of?
 M: Seems like some kind of rubber. I like the grooves in it.
 
 M: Of all the people and animals you've met, who was the worst?
@@ -119,7 +119,7 @@ T: Do you really want to know? It's a great sadness that tears you apart from th
 You really start question what the meaning of life and even after all this time so far I've come up with nothing.
 
 T: Hey, Steve; I'm really going to miss you when you leave me, you know that?
-penis Mening?
+CHANGE THIS LINE, the tortoise just mentioned how he would be depressed
 M: Really? I'd figured you'd move on pretty quickly. Not wallow in the old that will and kinda is me.
 T: No, you've been good to me, better than most. Even though it's painful to remember, some memories are worth keeping around.
 M: Thanks buddy, I'll miss you too if that is possible in whatever happens after this life.

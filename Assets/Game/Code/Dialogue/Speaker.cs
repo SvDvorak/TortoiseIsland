@@ -8,6 +8,7 @@ namespace Assets.Game.Code.Dialogue
     public enum Speaker
     {
         Bob,
-        Tortoise
+        Tortoise,
+        Radio
     }
 }

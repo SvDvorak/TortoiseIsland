@@ -11,6 +11,8 @@ namespace Assets.Game.Code.Items
         public List<Item> ListItems;
         public ItemSpawn currentSpawn;
 
+        private int itemIndex;
+
         public void SetSpawn(ItemSpawn spawn)
         {
             currentSpawn = spawn;
@@ -18,7 +20,12 @@ namespace Assets.Game.Code.Items
 
         public void SpawnItem(int itemsPickedUp)
         {
-            currentSpawn.SpawnItem(ListItems[itemsPickedUp]);
+            currentSpawn.SpawnItem(ListItems[itemIndex]);
+            itemIndex++;
+            if (itemIndex >= ListItems.Count)
+            {
+                itemIndex = 0;
+            }
         }
     }
 }

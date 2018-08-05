@@ -24,7 +24,7 @@ namespace Assets.Game.Code.UserControl
 
         private void UpdateMovement()
         {
-            float h = CrossPlatformInputManager.GetAxis("Vertical") * movementYSpeed * Time.deltaTime;
+            float h = CrossPlatformInputManager.GetAxis("Vertical") * movementYSpeed;
             rotator.Rotate = new Vector3(0, h, 0);
         }
     }
