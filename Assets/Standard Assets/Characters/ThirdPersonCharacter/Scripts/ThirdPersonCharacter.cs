@@ -50,13 +50,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			// turn amount and forward amount required to head in the desired
 			// direction.
 			if (move.magnitude > 1f) move.Normalize();
-			move = transform.InverseTransformDirection(move);
+			//move = transform.InverseTransformDirection(move);
 			CheckGroundStatus();
 			move = Vector3.ProjectOnPlane(move, m_GroundNormal);
-			m_TurnAmount = Mathf.Atan2(move.x, move.z);
+            m_TurnAmount = 0;// Mathf.Atan2(move.x, move.z);
 			m_ForwardAmount = move.z;
 
-			ApplyExtraTurnRotation();
+			//ApplyExtraTurnRotation();
 
 			// control and velocity handling is different when grounded and airborne:
 			if (m_IsGrounded)
@@ -119,8 +119,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		{
 			// update the animator parameters
 			m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
-			m_Animator.SetFloat("Turn", m_TurnAmount, 0.1f, Time.deltaTime);
-			m_Animator.SetBool("Crouch", m_Crouching);
+			//m_Animator.SetFloat("Turn", m_TurnAmount, 0.1f, Time.deltaTime);
+			//m_Animator.SetBool("Crouch", m_Crouching);
 			m_Animator.SetBool("OnGround", m_IsGrounded);
 			if (!m_IsGrounded)
 			{
