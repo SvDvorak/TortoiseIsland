@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 23127464905856606}
   - component: {fileID: 54162155926771096}
   - component: {fileID: 114044984713340990}
-  - component: {fileID: 64534989926797980}
   - component: {fileID: 114837057869056582}
+  - component: {fileID: 65451739822393748}
   m_Layer: 0
   m_Name: Item - Tire
   m_TagString: Item
@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1892720522827942}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 5.19, y: 2.178, z: -4.19}
+  m_LocalPosition: {x: -5.1, y: 1.47, z: 3.6}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -102,8 +102,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64534989926797980
-MeshCollider:
+--- !u!65 &65451739822393748
+BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -111,11 +111,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300022, guid: 6d0968d9cb3b4ae4fbede0bd2589dd03, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.4}
+  m_Center: {x: 0, y: 0, z: -0.03}
 --- !u!114 &114044984713340990
 MonoBehaviour:
   m_ObjectHideFlags: 1

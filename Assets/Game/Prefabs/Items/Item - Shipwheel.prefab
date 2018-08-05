@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 33933853133955376}
   - component: {fileID: 23796178251817022}
   - component: {fileID: 54438504463614020}
-  - component: {fileID: 64962148297513688}
   - component: {fileID: 114881412711846740}
   - component: {fileID: 114866455590711070}
+  - component: {fileID: 65523239535637616}
   m_Layer: 0
   m_Name: Item - Shipwheel
   m_TagString: Item
@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1068728457568808}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 6.593, y: 1.7329999, z: 0}
+  m_LocalPosition: {x: 3.8788307, y: 2.2593727, z: -3.9947758}
   m_LocalScale: {x: 100, y: 99.99997, z: 99.99997}
   m_Children: []
   m_Father: {fileID: 0}
@@ -102,8 +102,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64962148297513688
-MeshCollider:
+--- !u!65 &65523239535637616
+BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -111,11 +111,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: f0904e718edbe1845ab4761c9f80a0ba, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.04, y: 0.04, z: 0.008}
+  m_Center: {x: 0, y: -4.656614e-10, z: -0.002077568}
 --- !u!114 &114866455590711070
 MonoBehaviour:
   m_ObjectHideFlags: 1

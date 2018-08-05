@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 33718913950455144}
   - component: {fileID: 23347848091692500}
   - component: {fileID: 54326136906534676}
-  - component: {fileID: 64721409443063266}
   - component: {fileID: 114047485605311098}
   - component: {fileID: 114293665180250400}
+  - component: {fileID: 65631283893987374}
   m_Layer: 0
   m_Name: Item - Giraffe
   m_TagString: Item
@@ -102,8 +102,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64721409443063266
-MeshCollider:
+--- !u!65 &65631283893987374
+BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -111,11 +111,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 7455881722f97314fa59f2c1a92ca1ad, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.045, y: 0.045, z: 0.0339812}
+  m_Center: {x: 0, y: -0.0020615112, z: 0.0069906004}
 --- !u!114 &114047485605311098
 MonoBehaviour:
   m_ObjectHideFlags: 1
