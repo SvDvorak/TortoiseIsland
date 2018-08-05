@@ -132,11 +132,11 @@ MonoBehaviour:
   - Line: Hey, a radio!
     Speaker: 0
     DelayAfter: 0
-  - Line: Oh, I haven't seen those in a while. Unlikely that'll work though, with
-      the water and sand.
+  - Line: Oh, I haven't seen those in a while. Unlikely that'll work though, it's
+      been in the water and sand for far too long.
     Speaker: 1
     DelayAfter: 0.5
-  - Line: Maybe it's a bit sandy but I'm going to give it a try anyway.
+  - Line: Maybe but I'm going to give it a try anyway.
     Speaker: 0
     DelayAfter: 0
 --- !u!114 &114512927781058356

@@ -77,9 +77,9 @@ T: Because tortoises can't swim. Well, I figured out on my own that I couldn't b
 
 Radio
 M: Hey, a radio!
-T: Oh, I haven't seen those in a while. Unlikely that'll work though, with the water and sand.
-M: Maybe it's a bit sandy but I'm going to give it a try anyway.
-*click but nothing happens*
+T: Oh, I haven't seen those in a while. Unlikely that'll work though, it's been in the water and sand for far too long.
+M: Maybe but I'm going to give it a try anyway.
+*click*
 M: Shoot. That could have been helpful.
 T: Anything electrical gets ruined by the ocean the instant it falls in. Though I do remember Leigh found a small flashlight that somehow had survived the harsh water. It was very useful while it lasted though my favorite was when she would use it to light up her face in entertaining ways.
 M: Who's Leigh?
@@ -111,7 +111,7 @@ T: Most likely not, no.
 M: Atleast we're both stuck here, together.
 T: Yes we are. For a while.
 
-M: What happens when you die?
+M: Hey Rob. What do you think happens when you die?
 T: That is one of life's toughest questions. I've heard so many different theories that it'd make your head spin. But in the end nobody knows.
 M: But what do you believe?
 T: What does it matter? People come, they stay for a while and then they all, inevitably leave.

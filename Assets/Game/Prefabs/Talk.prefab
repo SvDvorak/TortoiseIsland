@@ -434,8 +434,8 @@ MonoBehaviour:
       water.
     Speaker: 1
     DelayAfter: 0
-  - Line: ' It was very useful while it lasted though my favorite was when she would
-      use it to light up her face in entertaining ways.'
+  - Line: It was very useful while it lasted though my favorite was when she would
+      use it to light up her face in entertaining ways.
     Speaker: 1
     DelayAfter: 1
   - Line: Who's Leigh?
@@ -449,7 +449,7 @@ MonoBehaviour:
       to know eachother she became one of the best friends I've ever had. But that
       was then.
     Speaker: 1
-    DelayAfter: 1
+    DelayAfter: 4
   - Line: Some days I really wonder if I will ever get off this island. Or if I'll
       ever meet another person.
     Speaker: 0
@@ -522,18 +522,18 @@ MonoBehaviour:
   - Line: Yes we are. For a while.
     Speaker: 1
     DelayAfter: 3
-  - Line: What happens when you die?
+  - Line: Rob, what do you think happens when you die?
     Speaker: 0
     DelayAfter: 0.5
-  - Line: That is one of life's toughest questions. I've heard so many different theories
-      that it'd make your head spin. But in the end nobody knows.
+  - Line: Now that is one of life's toughest questions. I've heard so many different
+      theories that it'd make your head spin. But in the end nobody knows.
     Speaker: 1
     DelayAfter: 0.5
   - Line: But what do you believe?
     Speaker: 0
     DelayAfter: 1
   - Line: What does it matter? People come, they stay for a while and then they all,
-      inevitably leave.
+      inevitably, leave.
     Speaker: 1
     DelayAfter: 0.5
   - Line: How do you handle people dying, or leaving you as you say? What is it like
@@ -543,20 +543,18 @@ MonoBehaviour:
   - Line: Do you really want to know? It's a great sadness that tears you apart from
       the inside followed by long depression that feels like it's never going to end.
     Speaker: 1
-    DelayAfter: 0
-  - Line: 
+    DelayAfter: 0.5
+  - Line: "It's made me scarred but not in a way that you can see.\r"
     Speaker: 1
-    DelayAfter: 2
-  - Line: "I've been scarred but not in a way that you can see.\r\nYou really start
-      question what the meaning of life and even after all this time so far I've come
-      up with nothing."
-    Speaker: 1
-    DelayAfter: 3
+    DelayAfter: 1.5
+  - Line: After a while you really start to question what the meaning of life and
+      even after all this time so far I've come up with nothing.
+    Speaker: 0
+    DelayAfter: 4
   - Line: Hey, Steve; I'm really going to miss you when you leave me, you know that?
     Speaker: 1
     DelayAfter: 0.5
-  - Line: 'M: Really? I''d figured you''d move on pretty quickly. Not wallow in the
-      old that will and kinda is me.'
+  - Line: 'M: Really? I''d figured you''d try move on, not wallow in the past.'
     Speaker: 0
     DelayAfter: 0.5
   - Line: No, you've been good to me, better than most. Even though it's painful to
