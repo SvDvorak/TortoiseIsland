@@ -165,7 +165,7 @@ namespace DigitalRuby.RainMaker
                             audioSourceRainCurrent.Stop();
                         }
                         audioSourceRainCurrent = newSource;
-                        audioSourceRainCurrent.Play(1.0f);
+                        audioSourceRainCurrent.Play(0.5f);
                     }
                     if (RainFallParticleSystem != null)
                     {

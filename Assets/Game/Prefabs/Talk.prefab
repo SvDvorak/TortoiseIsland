@@ -1,0 +1,570 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1903207987701260}
+  m_IsPrefabAsset: 1
+--- !u!1 &1139294116026976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4138720164662714}
+  - component: {fileID: 114779547080947886}
+  m_Layer: 0
+  m_Name: Age2Talk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1436360102372966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4575085435544646}
+  - component: {fileID: 114872552874381190}
+  m_Layer: 0
+  m_Name: Age3Talk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1490373881331962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4364197321175770}
+  - component: {fileID: 114262594423688332}
+  m_Layer: 0
+  m_Name: LastTortoiseTalk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1783333863152898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4145215180888284}
+  - component: {fileID: 114366420299039908}
+  m_Layer: 0
+  m_Name: RadioTalk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1903207987701260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4114882455245100}
+  m_Layer: 0
+  m_Name: Talk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1991846299260990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4040944445243760}
+  - component: {fileID: 33150398005436818}
+  - component: {fileID: 23163152189208928}
+  - component: {fileID: 65103021840444074}
+  - component: {fileID: 114339874183128946}
+  - component: {fileID: 82885908744275678}
+  m_Layer: 0
+  m_Name: FirstTortoiseTalk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4040944445243760
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1991846299260990}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.86, y: 0.706, z: 1.3700004}
+  m_LocalScale: {x: 5.0989, y: 2.4069998, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4114882455245100}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4114882455245100
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1903207987701260}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4040944445243760}
+  - {fileID: 4145215180888284}
+  - {fileID: 4138720164662714}
+  - {fileID: 4575085435544646}
+  - {fileID: 4364197321175770}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4138720164662714
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1139294116026976}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.521698, y: 1.8504105, z: -2.936085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4114882455245100}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4145215180888284
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1783333863152898}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.521698, y: 1.8504105, z: -2.936085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4114882455245100}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4364197321175770
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1490373881331962}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.521698, y: 1.8504105, z: -2.936085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4114882455245100}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4575085435544646
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1436360102372966}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.521698, y: 1.8504105, z: -2.936085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4114882455245100}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23163152189208928
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1991846299260990}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33150398005436818
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1991846299260990}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65103021840444074
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1991846299260990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!82 &82885908744275678
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1991846299260990}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: aa8acbb695326d14a9ede08a4b09024d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.123
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &114262594423688332
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1490373881331962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 067490b7daf4d084a9769c8f0805f897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemName: Talk
+  ListLines:
+  - Line: I'm going to miss you old friend.
+    Speaker: 1
+    DelayAfter: 5
+--- !u!114 &114339874183128946
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1991846299260990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19a2cd8affe33924e93ee31d738129cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineTalks:
+  - Line: Wow, someone else lives here too
+    Speaker: 0
+    DelayAfter: 2
+  - Line: Hi turtle
+    Speaker: 0
+    DelayAfter: 0
+  - Line: I'm a tortoise!
+    Speaker: 1
+    DelayAfter: 0
+  - Line: Oh sorry... hi tortoise
+    Speaker: 0
+    DelayAfter: 1
+  - Line: Hello young one
+    Speaker: 1
+    DelayAfter: 2
+  - Line: I'm lost, I don't know how I ended up here and I'm missing my T-shirt. You
+      haven't happened to have seen one?
+    Speaker: 0
+    DelayAfter: 2
+  - Line: I have, but it was a long time ago.
+    Speaker: 1
+    DelayAfter: 1
+  - Line: Oh. Ok. Could you help me look though?
+    Speaker: 0
+    DelayAfter: 1
+  - Line: Sure. I'll tag along.
+    Speaker: 1
+    DelayAfter: 0.5
+  - Line: ' That''s great, thanks! I''m Steve by the way, what''s your name?'
+    Speaker: 0
+    DelayAfter: 1
+  - Line: Lets say Rob
+    Speaker: 1
+    DelayAfter: 1
+  - Line: Ok Rob, lets see what we can find!
+    Speaker: 0
+    DelayAfter: 10
+  tortoise: {fileID: 0}
+  Rotator: {fileID: 0}
+  musicLvl1: {fileID: 82885908744275678}
+--- !u!114 &114366420299039908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1783333863152898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 067490b7daf4d084a9769c8f0805f897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemName: RadioClick
+  ListLines:
+  - Line: '*click*'
+    Speaker: 2
+    DelayAfter: 1
+  - Line: Shoot. That could have been helpful.
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: Anything electrical gets ruined by the ocean the instant it falls in. Though
+      I do remember Leigh found a small flashlight that somehow had survived the harsh
+      water.
+    Speaker: 1
+    DelayAfter: 0
+  - Line: It was very useful while it lasted though my favorite was when she would
+      use it to light up her face in entertaining ways.
+    Speaker: 1
+    DelayAfter: 1
+  - Line: Who's Leigh?
+    Speaker: 0
+    DelayAfter: 2
+  - Line: I guess I could tell you. Leigh was another castaway I met a bunch of years
+      ago.
+    Speaker: 1
+    DelayAfter: 0
+  - Line: She was about your age when I met her, a bit shy at first but once we got
+      to know eachother she became one of the best friends I've ever had. But that
+      was then.
+    Speaker: 1
+    DelayAfter: 4
+  - Line: Some days I really wonder if I will ever get off this island. Or if I'll
+      ever meet another person.
+    Speaker: 0
+    DelayAfter: 0
+  - Line: Before you met me, what was it like?
+    Speaker: 0
+    DelayAfter: 1
+  - Line: It was very lonely, walking around this island. But you push on, you continue
+      living day by day, night by night.
+    Speaker: 1
+    DelayAfter: 2
+--- !u!114 &114779547080947886
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1139294116026976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 067490b7daf4d084a9769c8f0805f897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemName: Talk
+  ListLines:
+  - Line: Rob, you never told me how you got here.
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: You never asked.
+    Speaker: 1
+    DelayAfter: 0.5
+  - Line: But I'm asking now.
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: 'Well, it simple as I was born here. This has always been my home. '
+    Speaker: 1
+    DelayAfter: 0
+  - Line: I only ever knew my mother and she passed away a long time ago, how she
+      ended up here is a mystery since I never asked back then.
+    Speaker: 1
+    DelayAfter: 2
+  - Line: Why haven't you ever tried to swim away?
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: Because tortoises can't swim. Well, I figured out on my own that I couldn't
+      but I was told later that tortoises as a species can't swim.
+    Speaker: 1
+    DelayAfter: 1
+--- !u!114 &114872552874381190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1436360102372966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 067490b7daf4d084a9769c8f0805f897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemName: Talk
+  ListLines:
+  - Line: There really isn't anyway of this island is there?
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: Most likely not, no.
+    Speaker: 1
+    DelayAfter: 0.5
+  - Line: Atleast we're both stuck here, together.
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: Yes we are. For a while.
+    Speaker: 1
+    DelayAfter: 3
+  - Line: Rob, what do you think happens when you die?
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: Now that is one of life's toughest questions. I've heard so many different
+      theories that it'd make your head spin. But in the end nobody knows.
+    Speaker: 1
+    DelayAfter: 0.5
+  - Line: But what do you believe?
+    Speaker: 0
+    DelayAfter: 1
+  - Line: What does it matter? People come, they stay for a while and then they all,
+      inevitably, leave.
+    Speaker: 1
+    DelayAfter: 0.5
+  - Line: How do you handle people dying, or leaving you as you say? What is it like
+      being alone after that.
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: Do you really want to know? It's a great sadness that tears you apart from
+      the inside followed by long depression that feels like it's never going to end.
+    Speaker: 1
+    DelayAfter: 0.5
+  - Line: "It's made me scarred but not in a way that you can see.\r"
+    Speaker: 1
+    DelayAfter: 1.5
+  - Line: After a while you really start to question what the meaning of life and
+      even after all this time so far I've come up with nothing.
+    Speaker: 0
+    DelayAfter: 4
+  - Line: Hey, Steve; I'm really going to miss you when you leave me, you know that?
+    Speaker: 1
+    DelayAfter: 0.5
+  - Line: 'M: Really? I''d figured you''d try move on, not wallow in the past.'
+    Speaker: 0
+    DelayAfter: 0.5
+  - Line: No, you've been good to me, better than most. Even though it's painful to
+      remember, some memories are worth keeping around.
+    Speaker: 1
+    DelayAfter: 1
+  - Line: Thanks buddy, I'll miss you too if that is possible in whatever happens
+      after this life.
+    Speaker: 0
+    DelayAfter: 5
+  - Line: I feel like this might be it, this might be where I leave you.
+    Speaker: 0
+    DelayAfter: 0

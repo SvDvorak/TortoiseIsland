@@ -31,7 +31,7 @@ namespace Assets.Game.Code.Events
         public Vector3 ScaleAge2;
         public Vector3 ScaleAge3;
 
-        private int eventsDone;
+        public int eventsDone;
 
         private float rainFadeout;
         private ItemSpawnController itemSpawnController;
