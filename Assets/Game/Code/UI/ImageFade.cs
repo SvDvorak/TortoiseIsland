@@ -16,7 +16,7 @@ namespace Assets.Game.Code.UI
         void Start()
         {
             image = GetComponent<Image>();
-            FadeIn(3f);
+            FadeIn(4f);
         }
 
         void Update()

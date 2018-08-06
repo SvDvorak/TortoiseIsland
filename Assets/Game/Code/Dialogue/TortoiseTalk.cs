@@ -13,6 +13,7 @@ namespace Assets.Game.Code.Dialogue
         public GameObject tortoise;
         public GameObject Rotator;
         public AudioSource musicLvl1;
+        public AudioSource waves;
 
         private bool isCollided = false;
         void Start()
@@ -27,9 +28,17 @@ namespace Assets.Game.Code.Dialogue
                 isCollided = true;
                 tortoise.transform.parent = Rotator.transform;
                 dialogueSystem.SetLines(lineTalks);
-                musicLvl1.Play();
+                StartCoroutine(PlayMusic());
                 //GameObject.Destroy(this.gameObject);
             }
+        }
+
+        IEnumerator<WaitForSecondsRealtime> PlayMusic()
+        {
+            musicLvl1.Play();
+            //Song first pling is at 25.30 seconds
+            yield return new WaitForSecondsRealtime(25.3f);
+            waves.Stop();
         }
     }
 }

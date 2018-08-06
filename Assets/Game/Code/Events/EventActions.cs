@@ -19,6 +19,10 @@ namespace Assets.Game.Code.Events
         public Item TalkAge3;
         public Item TalkLastTortoise;
         public Text TextEnd;
+        public GameObject Age2Remove;
+        public GameObject Age3Remove;
+        public GameObject Age2Add;
+        public GameObject Age3Add;
         private DialogueSystem dialogueSystem;
         private GameObject rainChild;
 
@@ -43,6 +47,18 @@ namespace Assets.Game.Code.Events
             playerMesh = GameObject.FindGameObjectWithTag("PlayerMesh");
             dialogueSystem = GameObject.FindObjectOfType<DialogueSystem>();
             TextEnd.CrossFadeAlpha(0f, 0f, true);
+
+            foreach (Renderer render in Age2Add.GetComponentsInChildren<Renderer>())
+            {
+                render.enabled = false;
+            }
+
+            foreach (Renderer render in Age3Add.GetComponentsInChildren<Renderer>())
+            {
+                render.enabled = false;
+            }
+
+            Cursor.visible = false;
         }
 
         void Update()
@@ -75,8 +91,6 @@ namespace Assets.Game.Code.Events
                     //Done talk pants, spawn Steering Wheel
                     itemSpawnController.SpawnItem(eventsDone);
 
-
-                    //StartCoroutine(Age3());
                     break;
 
                 case 3:
@@ -93,7 +107,7 @@ namespace Assets.Game.Code.Events
 
                     break;
                 case 6:
-                    //Age2 talk done
+                    //Age2 talk done, spawn Radio
                     itemSpawnController.SpawnItem(eventsDone);
 
                     break;
@@ -165,6 +179,17 @@ namespace Assets.Game.Code.Events
             ImageFade.FadeOut(3f);
             yield return new WaitForSeconds(3.2f);
 
+            //Add new
+            foreach (Renderer render in Age2Remove.GetComponentsInChildren<Renderer>())
+            {
+                render.enabled = false;
+            }
+
+            foreach (Renderer render in Age2Add.GetComponentsInChildren<Renderer>())
+            {
+                render.enabled = true;
+            }
+
             //Spawn new
             Renderer rend = playerMesh.GetComponent<Renderer>();
             rend.materials = new Material[]
@@ -199,6 +224,22 @@ namespace Assets.Game.Code.Events
             ImageFade.FadeOut(3f);
             yield return new WaitForSeconds(3.2f);
 
+            //Add new
+            foreach (Renderer render in Age2Add.GetComponentsInChildren<Renderer>())
+            {
+                render.enabled = false;
+            }
+
+            foreach (Renderer render in Age3Remove.GetComponentsInChildren<Renderer>())
+            {
+                render.enabled = false;
+            }
+
+            foreach (Renderer render in Age3Add.GetComponentsInChildren<Renderer>())
+            {
+                render.enabled = true;
+            }
+
             //Spawn new
             Renderer rend = playerMesh.GetComponent<Renderer>();
             rend.materials = new Material[]
@@ -221,6 +262,7 @@ namespace Assets.Game.Code.Events
 
         IEnumerator<WaitForSeconds> EndGame()
         {
+            yield return new WaitForSeconds(2f);
             TextEnd.CrossFadeAlpha(1f, 2f, true);
             TextEnd.text = "For all of us who wander alone.";
             yield return new WaitForSeconds(3f);
